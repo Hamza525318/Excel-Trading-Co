@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="stylesheet" href="../../../assets/output.css">
+  <link rel="stylesheet" href="../../../assets/style.css">
+  <script>
+    new WOW().init();
+  </script>
+    <title>Nord Lock</title>
+</head>
+<body>
+
+    <nav class="bg-primary-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white text-3xl font-bold font-outfit">
+            ETC
+          </div>
+          <div class="hidden md:flex space-x-8 font-roboto">
+            <a href="#" class="text-white text-base">Home</a>
+            <a href="/src/about-us.html" class="text-white text-base">About Us</a>
+            <div class="relative dropdown">
+              <a href="#" class="text-white text-base flex items-center">Products</a>
+              <!-- Dropdown Menu -->
+              <div class="dropdown-menu">
+                <a href="#">
+                  <img src="../../../assets/products/self-drilling-screws.png" alt="Product 1">
+                <div>
+                  <h4 class="font-semibold text-outfit text-sm">Self drillling screws</h4>
+                  <p class="text-sm">High-quality fasteners for industrial use.</p>
+                </div>
+                </a>
+              <a href="#">
+                <img src="../../../assets/products/drywall-chipboard-screw.png" alt="Product 2">
+                <div>
+                  <h4 class="font-semibold text-outfit text-sm">Drywall Screws</h4>
+                  <p class="text-sm">Durable tools for all your construction needs.</p>
+                </div>
+              </a>
+              <a href="#">
+                <img src="../../../assets/products/blind-rivets.png" alt="Product 3">
+                <div>
+                  <h4 class="font-semibold text-outfit text-sm">Blind Rivets</h4>
+                  <p class="text-sm">Precision instruments for accurate measurements.</p>
+                </div>
+              </a>
+              <a href="#">
+                <img src="../../../assets/products/self-tapping-screws.png" alt="Product 4">
+                <div>
+                  <h4 class="font-semibold text-outfit text-sm">Self Tapping screws</h4>
+                  <p class="text-sm">Precision instruments for accurate measurements.</p>
+                </div>
+              </a>
+              <a href="#">
+                <img src="../../../assets/products/rivet-nut.png" alt="Product 5">
+                <div>
+                  <h4 class="font-semibold text-outfit text-sm">Rivet nuts</h4>
+                  <p class="text-sm">Precision instruments for accurate measurements.</p>
+                </div>
+              </a>
+              <a href="#">
+                <img src="../../../assets/products/anchors.png" alt="Product 6">
+                <div>
+                  <h4 class="font-semibold text-outfit text-sm">Anchors</h4>
+                  <p class="text-sm">Precision instruments for accurate measurements.</p>
+                </div>
+              </a>
+              <div class="flex justify-center">
+                <button class="bg-primary-orange-500 text-white my-2 py-1 px-6 rounded-md font-roboto text-sm hover:bg-orange-600 transition duration-300 ease-in-out" id="view-more-products">
+                  View more
+                </button>
+                </div>
+              <!-- <a href="#">
+                <img src="../assets/products/nord-lock.png" alt="Product 7">
+                <div>
+                  <h4 class="font-bold text sm">Nord lock</h4>
+                  <p class="text-sm">Precision instruments for accurate measurements.</p>
+                </div>
+              </a>
+              <a href="#">
+                <img src="../assets/products/nut-bolt.png" alt="Product 8">
+                <div>
+                  <h4 class="font-bold text sm">Bolt and Nuts</h4>
+                  <p class="text-sm">Precision instruments for accurate measurements.</p>
+                </div>
+              </a> -->
+              </div>
+            </div>
+            <a href="/src/contact-us.html" class="text-white text-base">Contact Us</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+          <!-- Sidebar for mobile view -->
+          <div id="sidebar" class="fixed hidden top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
+            <img src="../../../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
+            <div class="w-full p-4">
+              <div class="text-lg font-bold font-outfit mb-2">Excel Trading Corporation</div>
+              <div class="h-1 w-[30%] bg-orange-500 mb-6"></div>
+              <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+                <img src="../../../assets/icons/sidebar-home.png" alt="Home Icon" class="mr-4 w-5 h-5">
+                Home
+              </a>
+              <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+                <img src="../../../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
+                About Us
+              </a>
+              <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+                <img src="../../../assets/icons/sidebar-toolbox.png" alt="Products Icon" class="mr-4 w-5 h-5">
+                Products
+              </a>
+            <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <img src="../../../assets/icons/sidebar-phone.png" alt="Contact Us Icon" class="mr-4 w-5 h-5">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <section class="contact-section h-36 md:64 flex justify-center items-center">
+      <div class="overlay"></div>
+      <div class="content text-white ml-6">
+          <!-- Text Box -->
+          <div class="text-box text-center text-white font-roboto">
+            <h3 class="text-lg md:text-2xl font-bold " id="product-title">NORD LOCK</h3>
+          </div>
+         </div>
+     </section>
+
+    <section class="py-16 bg-primary-gray-100 px-6 md:px-16">
+        <div class="container mx-auto flex flex-wrap-reverse items-center">
+          <div class="w-full my-4 wow animate__animated animate__fadeInLeft md:w-1/2 md:my-0">
+            <!-- Advantages -->
+            <h3 class="text-xl md:text-2xl font-semibold font-outfit text-[#00396F] mb-3">Description</h3>
+            <ul class="mb-8" id="advantages-box">
+              <li class="flex items-center mb-2">
+                <span class="text-sm md:text-base font-poppins leading-relaxed">Our products are based on leading wedgelocking technology and are recognized for their ability to safely secure bolted joints exposed to severe vibration and dynamic loads.
+                </span>
+              </li>
+            </ul>
+            
+    
+            <div class="w-full flex justify-center md:justify-start">
+              <button class="mt-4 bg-orange-500 text-white py-2 px-12 rounded-full font-roboto text-base hover:bg-orange-600 transition duration-300 ease-in-out mx-auto md:mx-0 md:text-left">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+          <div class="w-screen mx-auto md:w-1/2 wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+            <section class="w-full flex justify-center items-center">
+                <div class="w-full border bg-white text-gray-800  rounded-lg p-6 max-w-xs mx-auto">
+                  <img src="../../../assets/single-products/nord-lock/nord-lock.png" alt="Nord Lock" class="mx-auto w-full h-auto object-contain mb-4">
+                </div>
+              </section>
+          </div>
+        </div>
+
+        <div class="container mx-auto flex flex-wrap-reverse items-center my-4">
+            <div class="w-full my-4 wow animate__animated animate__fadeInLeft md:w-1/2 md:my-0">
+              <!-- Advantages -->
+              <h3 class="text-xl md:text-2xl font-semibold font-outfit text-[#00396F] mb-3">Nord-Lock wedge-locking Technology:</h3>
+              <ul class="mb-8 font-poppins text-gray-800 text-sm md:text-base
+              " id="advantages-box">
+                <li class="flex items-center mb-2">
+                  <span class="text-sm md:text-base font-poppins leading-relaxed">Nord-Lock washers secure bolted joints with tension instead of friction. The system is comprised of a pair of washers with cams on one side and radial teeth on the opposite side. Since the cam angle ‘α’ is greater than the thread pitch ‘β’ a wedge effect is created by the cams, preventing the bolt from rotating loose
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="w-screen mx-auto md:w-1/2 wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+              <section class="flex justify-center items-center">
+                  <div class="w-full border bg-white text-gray-800  rounded-lg p-6 max-w-xs mx-auto">
+                    <img src="../../../assets/single-products/nord-lock/nord-lock-2.jpg" alt="Nord Lock" class="mx-auto w-full h-auto object-contain mb-4">
+                  </div>
+                </section>
+            </div>
+          </div>
+
+          <div class="container mx-auto flex flex-wrap-reverse">
+            <div class="w-full my-4 wow animate__animated animate__fadeInLeft md:w-1/2 md:my-0">
+              <!-- Advantages -->
+              <h3 class="text-xl md:text-2xl font-semibold font-outfit text-[#00396F] mb-3">Product Benefits</h3>
+              <ul class="mb-8 font-poppins text-gray-800 text-sm md:text-base" id="advantages-box">
+                <li class="flex items-center mb-3">
+                  <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                  <span>Maintains high clamp load and thereby ensures the function of the joint
+                  </span>
+                </li>
+                <li class="flex items-center mb-3">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                    <span>Quick and easy to install and remove with standard tools
+                    </span>
+                </li>
+                <li class="flex items-center mb-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                    <span>Locking function not affected by lubrication
+                    </span>
+                </li>
+                <li class="flex items-center mb-3">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                    <span>Defined and uniform friction conditions which result in a more accurate preload
+                    </span>
+                </li>
+                <li class="flex items-center mb-3">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                    <span>Same temperature characteristics as standard bolt / nut </span>
+                </li>
+                <li class="flex items-center mb-3">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                    <span>Reusable in addition,Nord-Lock washers do not affect the reusability of fasteners </span>
+                </li>
+                <li class="flex items-center mb-3">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-5 h-5">
+                    <span>The washers are hardened and can support and distribute great loads</span>
+                </li>
+            </ul>
+            </div>
+            <div class="w-screen mx-auto md:w-1/2">
+              <section class="flex justify-center items-center">
+                <iframe height="315" class="w-full md: ml-5" src="https://www.youtube.com/embed/IKwWu2w1gGk?si=GqIUpHkTOHLogKz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </div>
+          </div>
+      </section>
+
+      <section class="py-4 bg-primary-gray-100 px-6 md:px-16">
+        <h2 class="text-[24px] font-semibold font-outfit leading-5 text-center text-dark-blue-600  md:text-[32px]">Using Nord-Lock Washers</h2>
+    <div class="container w-full mx-auto flex flex-wrap-reverse items-center my-10">
+        <div class="w-full my-4 wow animate__animated animate__fadeInLeft md:w-1/2 md:my-0">
+            <p class="text-base md:text-base font-poppins mb-4">Nord-Lock washers secure bolted joints with tension instead of friction. The system is comprised of a pair of washers with cams on one side and radial teeth on the opposite side. Since the cam angle is greater than the thread pitch ‘β’ a wedge effect is created by the cams, preventing the bolt from rotating loose
+            </p>
+            <h3 class="text-xl font-semibold font-outfit mb-4 text-[#00396F]">Installing the Washers</h3>
+            <p class="text-base md:text-base font-poppins mb-4">
+                The pre-assembled washers are installed in pairs, cam face to cam face. Nord-Lock recommends lubrication when possible
+            </p>
+            <h3 class="text-xl font-semibold font-outfit mb-4 text-[#00396F]">Tightening</h3>
+            <p class="text-base md:text-base font-poppins mb-4">
+                Tighten Nord-Lock washers with standard tools according to the guidelines (on page 9-11). Tightening guidelines for other bolt grades are available through your Nord-Lock representative.
+            </p>
+            <h3 class="text-xl font-semibold font-outfit mb-4 text-[#00396F]">Untightening</h3>
+            <p class="text-base md:text-base font-poppins mb-4">Untightening Nord-Lock washers is as simple as tightening. Note that since the locking function is not based on increased friction, the untightening torque is generally lower than the tightening torque. Therefore it is not possible to measure offtorque as verification of locking function.</p>
+            <h3 class="text-xl font-semibold font-outfit mb-4 text-[#00396F]">Reusing Nord-Lock</h3>
+            <p class="text-base md:text-base font-poppins mb-4">Nord-Lock washers can normally be reused. As with all fasteners, they should be inspected for wear before reassembly. Make sure that the washers are reinstalled correctly cam face to cam face. Nord-Lock recommends lubrication of fasteners before reuse in order to minimize changes in friction conditions..</p>
+        </div>
+        <div class="w-screen mx-auto md:w-1/2 wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+            <section class="w-full flex justify-center items-center">
+               <img src="../../../assets/single-products/nord-lock/nord-lock-washers.jpg" alt="Nord Washers" class="mx-auto w-full h-auto object-contain mb-4"/>
+            </section>
+        </div>
+        </div>
+      </section>
+
+      
+     
+<section class="bg-dark-blue-500 mb-6 p-4">
+  <div class="container mx-auto text-center flex flex-col items-center relative">
+      <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-0 md:w-2/3 lg:w-1/2 mb-4">
+        <img src="../../../assets/icons/cta-tool1.png" alt="Icon 1" class="w-8 h-8 md:w-16 md:h-16 self-start md:self-auto">
+        <h2 class="text-white text-sm md:text-xl font-outfit mt-2 md:mt-0 px-4">Build with Confidence – Invest in the Best Tools for Your Projects Now!!</h2>
+        <img src="../../../assets/icons/cta-tool2.png" alt="Icon 2" class="w-8 h-8 md:w-16 md:h-16 self-end md:self-auto">
+      </div>
+      <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
+      <button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+          Contact Now
+      </button>
+  </div>
+</section>
+
+<footer class="bg-primary-orange-600 py-8">
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="flex flex-wrap justify-between text-white">
+      <!-- Section 1 -->
+      <div class="w-full md:w-1/4 mb-8 md:mb-0">
+        <div class="flex flex-col items-center md:block">
+        <h3 class="text-xl font-semibold font-outfit mb-4">Excel Trading Corporation</h3>
+        <div class="flex items-start my-4">
+         <img src="../../../assets/icons/footer-location.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+        <p class="text-base">
+          163, 1. Sadar Patrappa Rd Madrapet, <br>
+          Kumbarpet, Dodpete, Nagarathpete, <br>
+          Bengaluru - 560002
+        </p>
+        </div>
+      <div class="flex items-start my-2  md:my-4">
+        <img src="../../../assets/icons/footer-phone.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+        <p class="text-base">+919448239476/+919844049390</p>
+      </div>
+        <div class="flex items-start my-2 md:my-4">
+          <img src="../../../assets/icons/footer-email.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+         <p class="text-base">exceltradingcorp@gmail.com</p>
+        </div>
+        <div class="flex mt-4 space-x-4 md:mt-6">
+          <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../../../assets/icons/facebook.png" alt="Facebook Icon">
+          </div>
+          <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../../../assets/icons/google.png" alt="Twitter Icon">
+          </div>
+          <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../../../assets/icons/twitter.png" alt="Google Plus Icon">
+          </div>
+          <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../../../assets/icons/linkedIn.png" alt="LinkedIn Icon">
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Section 2 -->
+      <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
+        <div class="flex flex-col items-center md:block">
+          <h3 class="text-xl font-semibold font-outfit mb-4">Our Products</h3>
+          <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+            <li class="text-base mb-2">Self Drilling Screws</li>
+            <li class="text-base mb-2">Self Tapping Screws</li>
+            <li class="text-base mb-2">Blind Rivets</li>
+            <li class="text-base mb-2">Rivet Nut</li>
+            <li class="text-base mb-2 ">Anchors</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Section 3 -->
+      <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
+        <div class="flex flex-col items-center md:block">
+          <h3 class="text-xl font-semibold font-outfit mb-4">Our Information</h3>
+          <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+            <li class="text-base mb-2">About us</li>
+            <li class="text-base mb-2">Our Policy</li>
+            <li class="text-base mb-2">Working Days</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Section 4 -->
+      <div class="w-full md:w-1/4">
+        <h3 class="text-lg font-semibold font-outfit mb-4">Locate Us Here</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.105313629579!2d77.57725927381014!3d12.965112415023084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e188f8f01f%3A0xf166954560acacda!2sExcel%20Trading%20Corporation!5e0!3m2!1sen!2sin!4v1723037321158!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full md:w-[400px] h-[200px]"></iframe>
+      </div>
+    </div>
+
+    <div class="w-[80%] h-[2px] bg-primary-gray-300 mx-auto mt-8 mb-4"></div>
+  </div>
+<p class="text-center text-sm md:text-base text-white tracking-wide font-poppins mt-2 mb-4">
+  © 2024 Developed by Hamza Mustafa. All rights reserved.
+</p>
+</footer>
+
+
+    <script src="../../../assets/scripts/index.js"></script>
+    <script src="../../../assets/scripts/products.js"></script>
+</body>
+</html>

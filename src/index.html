@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/output.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script>
+      new WOW().init();
+    </script>
+    <title>EXCEL TRADING CORPORATION</title>
+</head>
+<body class="overflow-x-hidden">
+  <div class="fixed bottom-20 right-2 space-y-2 z-50">
+    <a href="https://wa.me/your-number" target="_blank" class="bg-green-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out">
+        <img src="../assets/icons/linkedIn.png" alt="WhatsApp Icon" class="w-6 h-6">
+    </a>
+    <a href="mailto:info@yourcompany.com" class="bg-blue-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+        <img src="../assets/icons/footer-email.png" alt="Email Icon" class="w-6 h-6">
+    </a>
+    <a href="tel:+123456789" class="bg-orange-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+        <img src="../assets/icons/footer-phone.png" alt="Call Icon" class="w-6 h-6">
+    </a>
+   </div>
+
+   <div class="fixed bottom-4 right-2 z-50">
+    <a href="#contact-form" class="block bg-primary-blue-500 text-white py-[6px] px-4 rounded-lg shadow-lg text-center hover:bg-primary-blue-600 transition duration-300  ease-in-out">
+      Enquire Now
+    </a>
+   </div>
+
+  <nav class="bg-primary-blue-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-white text-3xl font-bold font-outfit">
+        ETC
+      </div>
+      <div class="hidden md:flex space-x-8 font-roboto">
+        <a href="#" class="text-white text-base">Home</a>
+        <a href="/src/about-us.html" class="text-white text-base">About Us</a>
+        <div class="relative dropdown">
+          <a href="#" class="text-white text-base flex items-center">Products</a>
+          <!-- Dropdown Menu -->
+          <div class="dropdown-menu">
+            <a href="#">
+              <img src="../assets/products/self-drilling-screws.png" alt="Product 1">
+            <div>
+              <h4 class="font-semibold text-outfit text-sm">Self drillling screws</h4>
+              <p class="text-sm">High-quality fasteners for industrial use.</p>
+            </div>
+            </a>
+          <a href="#">
+            <img src="../assets/products/drywall-chipboard-screw.png" alt="Product 2">
+            <div>
+              <h4 class="font-semibold text-outfit text-sm">Drywall Screws</h4>
+              <p class="text-sm">Durable tools for all your construction needs.</p>
+            </div>
+          </a>
+          <a href="#">
+            <img src="../assets/products/blind-rivets.png" alt="Product 3">
+            <div>
+              <h4 class="font-semibold text-outfit text-sm">Blind Rivets</h4>
+              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            </div>
+          </a>
+          <a href="#">
+            <img src="../assets/products/self-tapping-screws.png" alt="Product 4">
+            <div>
+              <h4 class="font-semibold text-outfit text-sm">Self Tapping screws</h4>
+              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            </div>
+          </a>
+          <a href="#">
+            <img src="../assets/products/rivet-nut.png" alt="Product 5">
+            <div>
+              <h4 class="font-semibold text-outfit text-sm">Rivet nuts</h4>
+              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            </div>
+          </a>
+          <a href="#">
+            <img src="../assets/products/anchors.png" alt="Product 6">
+            <div>
+              <h4 class="font-semibold text-outfit text-sm">Anchors</h4>
+              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button class="bg-primary-orange-500 text-white my-2 py-1 px-6 rounded-md font-roboto text-sm hover:bg-orange-600 transition duration-300 ease-in-out" id="view-more-products">
+              View more
+            </button>
+            </div>
+          <!-- <a href="#">
+            <img src="../assets/products/nord-lock.png" alt="Product 7">
+            <div>
+              <h4 class="font-bold text sm">Nord lock</h4>
+              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            </div>
+          </a>
+          <a href="#">
+            <img src="../assets/products/nut-bolt.png" alt="Product 8">
+            <div>
+              <h4 class="font-bold text sm">Bolt and Nuts</h4>
+              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            </div>
+          </a> -->
+          </div>
+        </div>
+        <a href="/src/contact-us.html" class="text-white text-base">Contact Us</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+      <!-- Sidebar for mobile view -->
+      <div id="sidebar" class="fixed hidden top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
+        <img src="../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
+        <div class="w-full p-4">
+          <div class="text-lg font-bold font-outfit mb-2">Excel Trading Corporation</div>
+          <div class="h-1 w-[30%] bg-orange-500 mb-6"></div>
+          <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <img src="../assets/icons/sidebar-home.png" alt="Home Icon" class="mr-4 w-5 h-5">
+            Home
+          </a>
+          <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <img src="../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
+            About Us
+          </a>
+          <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <img src="../assets/icons/sidebar-toolbox.png" alt="Products Icon" class="mr-4 w-5 h-5">
+            Products
+          </a>
+          <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <img src="../assets/icons/sidebar-phone.png" alt="Contact Us Icon" class="mr-4 w-5 h-5">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <section class="bg-peach border border-peach p-4 flex justify-between items-center shadow-xl md:hidden">
+        <div>
+          <img src="../assets/company/patta.png" alt="Dummy Image" class="w-30">
+        </div>
+        <!-- Right Side Icons -->
+        <div class="flex space-x-2">
+          <div class="bg-dark-blue-600 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../assets/icons/facebook.png" alt="Facebook Icon" class="w-5 h-5">
+          </div>
+          <div class="bg-dark-blue-600 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../assets/icons/google.png" alt="Google Icon" class="w-5 h-5">
+          </div>
+          <div class="bg-dark-blue-600 rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="../assets/icons/linkedIn.png" alt="LinkedIn Icon" class="w-5 h-5">
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Section start -->
+      <section class="hidden md:flex items-center justify-between h-[85vh] bg-hero-bg bg-gradient">
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-3/5 p-8 bg-blur relative wow animate__animated animate__fadeInLeft">
+            <h1 class="text-5xl md:text-6xl font-bold font-outfit text-black mb-4">Excel Trading<br/> Corporation</h1>
+            <p class="text-base md:text-lg font-roboto text-black mb-4">
+              Horizon Inc. is a leading importer and distributor of fasteners. With over 15 years of experience in the field, the founders of Horizon Inc are well placed to understand customer requirements and offer solutions for their fastening needs with a focus on quality and customer service.
+            </p>
+            <button class="mt-4 bg-primary-orange-500 text-white py-[6px] px-12 rounded-xl font-roboto">Read More</button>
+            <div class="absolute right-0 top-0 bottom-0 red-line"></div>
+          </div>
+          <div class="w-2/5">
+            <!-- Right section (empty for now) -->
+            <div class="wow animate__animated animate__fadeInRight">
+                <img src="https://via.placeholder.com/200" alt="Fasteners" class="rounded-lg shadow-lg mb-4">
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" bg-hero-bg bg-gradient wow animate__animated animate__fadeInLeft border h-[60vh] flex items-center py-12 px-4 shadow-xl md:hidden">
+        <!-- Title -->
+        <div>
+        <h1 class="text-[36px] font-bold font-outfit mb-4 text-center">Excel Trading Corporation</h1>
+        <div class="h-1 w-[75%] mx-auto bg-red-500 mb-4"></div>
+        <!-- Description -->
+        
+        <p class="text-base text-center font-roboto text-gray-800 my-6 tracking-wider">
+          Excel Trading Co, a leading importer and distributor of fasteners, leverages over 15 years of experience to understand and meet customer requirements, focusing on quality and service.
+        </p>
+        <!-- Button -->
+        <div class="flex justify-center">
+        <button class="bg-primary-orange-500 text-white py-2 px-8 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+          Our Products
+        </button>
+        </div>
+        </div>
+      </section>
+
+      <!-- Our Dealerships -->
+      <section id="dealerships-section" class="bg-hero-bg bg-gradient py-12 wow animate__animated  animate__fadeInUpBig">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl md:text-3xl font-outfit mb-8">Our Dealerships</h2>
+          <div class="flex flex-wrap justify-center items-center">
+            <!-- First Row -->
+            <div class="w-full my-4 sm:w-1/3 p-4 sm:my-0">
+              <img src="../assets/company/Klimas.png" alt="Klimas" class="mx-auto">
+            </div>
+            <div class="w-full my-4 sm:w-1/3 p-4 sm:my-0">
+              <img src="../assets/company/StudCraft.png" alt="Dealer 2" class="mx-auto">
+            </div>
+            <div class="w-full my-4 sm:w-1/3 p-4 sm:my-0">
+              <img src="../assets/company/Trivella.png" alt="Dealer 3" class="mx-auto">
+            </div>
+            <!-- Second Row -->
+            <div class="w-full my-4 sm:w-1/3 p-4 sm:my-0">
+              <img src="../assets/company/Patta_2.png" alt="Dealer 4" class="mx-auto">
+            </div>
+            <div class="w-full my-4 sm:w-1/3 p-4 sm:my-0">
+              <img src="../assets/company/Tembo.png" alt="Dealer 5" class="mx-auto">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services section -->
+      <section class="bg-[#FAFAFA] py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl md:text-3xl font-outfit mb-8 wow animate__animated animate__fadeInDown">Our Services</h2>
+          <div class="flex flex-wrap justify-center gap-x-8">
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+              <div class="bg-dark-blue-600 rounded-lg p-4 text-white text-center shadow-lg wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                <img src="../assets/icons/services-diamond.png" alt="Icon" class="w-20 h-20 mx-auto mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                <h3 class="font-roboto text-xl mb-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Reliable And Original Tools</h3>
+                <p class="font-roboto text-sm wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">We give access to a wide range of high-quality, original tools.</p>
+              </div>
+            </div>
+      
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+              <div class="bg-dark-blue-600 rounded-lg p-4 text-white text-center shadow-lg wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <img src="../assets/icons/services-hand.png" alt="Icon" class="w-20 h-20 mx-auto mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                <h3 class="font-roboto text-xl mb-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Reliable And Original Tools</h3>
+                <p class="font-roboto text-sm wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">We give access to a wide range of high-quality, original tools.</p>
+              </div>
+            </div>
+      
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+              <div class="bg-dark-blue-600 rounded-lg p-4 text-white text-center shadow-lg wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                <img src="../assets/icons/services-truck.png" alt="Icon" class="w-20 h-20 mx-auto mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                <h3 class="font-roboto text-xl mb-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">Reliable And Original Tools</h3>
+                <p class="font-roboto text-sm wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">We give access to a wide range of high-quality, original tools.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="flex flex-wrap justify-center md:mt-4">
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+              <div class="bg-dark-blue-600 rounded-lg p-4 text-white text-center shadow-lg wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                <img src="../assets/icons/services-customers.png" alt="Icon" class="w-20 h-20 mx-auto mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                <h3 class="font-roboto text-xl mb-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">Reliable And Original Tools</h3>
+                <p class="font-roboto text-sm wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">We give access to a wide range of high-quality, original tools.</p>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+              <div class="bg-dark-blue-600 rounded-lg p-4 text-white text-center shadow-lg wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                <img src="../assets/icons/services-building.png" alt="Icon" class="w-20 h-20 mx-auto mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
+                <h3 class="font-roboto text-xl mb-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">Reliable And Original Tools</h3>
+                <p class="font-roboto text-sm wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">We give access to a wide range of high-quality, original tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- CTA SECTION -->
+    <section class="bg-[#002D62] py-8">
+        <div class="container mx-auto text-center flex flex-col items-center relative">
+          <div class="flex justify-between items-center w-full px-4 md:px-0 md:w-2/3 lg:w-1/2 mb-4">
+            <img src="../assets/icons/cta-tool1.png" alt="Icon 1" class="absolute top-[-24px] left-0 w-[30px] h-[30px] md:top-2 md:left-2 md:w-16 md:h-16">
+            <h2 class="text-white text-base md:text-xl font-outfit mx-4">Your Trusted Partner For Quality Tools – Excel Trading Corporations!</h2>
+            <img src="../assets/icons/cta-tool2.png" alt="Icon 2" class="absolute bottom-[-20px] right-0 w-[30px] h-[30px] md:bottom-2 md:right-2 md:w-16 md:h-16">>
+          </div>
+          <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
+          <button class="bg-[#FF8C42] mt-4 text-white py-2 px-8 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+            Enquire Now
+          </button>
+        </div>
+    </section>
+
+    <!-- Our product range section -->
+    <section class="py-12 bg-primary-gray-200" id="products-range-section">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl md:text-3xl font-outfit mb-8">Our Products Range</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Single Product Card -->
+            <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+              <a href="./categories/self-drilling-screws.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Self-Drilling Screws</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/products/product-screw.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Our PATTA brand Drywall and Chipboard Screws made of high grade steel for gypsum board fixing and furniture making.</p>
+                  </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+            
+            <!-- Repeat for other product cards -->
+
+            <div class="p-4 h-full  wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <a href="./single-products/drywall-chipboard/drywall-chipboard-screws.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Drywall / Chipboard Screws</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/drywall-chipboard/drywall-chipboard-screw.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Our PATTA brand Drywall and Chipboard Screws made of high grade steel for gypsum board fixing and furniture making.</p>
+                  </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+            </a>
+            </div>
+            
+            <div class="p-4 h-full  wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+              <a href="./categories/blind-rivets.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Blind Rivets</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/blind-rivets/blind-rivet.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Used in various applications to secure components together, our high-quality rivets are easily installed with access needed from just one side</p>
+                  </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+
+            <div class="p-4 h-full  wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+              <a href="./single-products/colour-head-rivets/colour-head-rivet.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Colour Head Rivets</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/color-head-rivets/colorhead-category.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">With high grade aluminum alloy rivet and stainless steel nail, our color head rivets are preferred in the ininstallation of High Pressure Laminate Sheets like FunderMax ®</p>
+                  </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+        
+            <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+              <a href="./categories/self-tapping-screws.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Self Tapping Screws</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/self-tapping-screws/panhead-tapping.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Our self-tapping screws have a wide range of tip and thread patterns, and are available with almost any possible screw head design. Widely used in sheet metal fabrication.</p>
+                  </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+
+            <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+              <a href="./categories/rivet-nuts.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Rivet Nut</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/rivet-nut/rivet-category.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Blind rivet nuts also known as blind threaded inserts, rivet nuts,are designed to provide strong thread in thin panel sections.</p>
+                  </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+
+            <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+              <a href="./categories/anchors.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Anchors</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/anchors/chemical-anchors.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Anchor bolts are used to connect structural and non-structural elements to the concrete.They ensure a secure and stable connection, critical for the safety and integrity of the structure</p>
+                    </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+            <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+              <a href="./single-products/nord-lock/nord-lock.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Nord Lock</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/nord-lock/nord-lock.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Nord-Lock's original wedge-locking technology ensures bolted joints stay secure, even under severe vibration and dynamic loads, preventing unintentional loosening.</p>
+                    </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+            <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.10s">
+              <a href="./single-products/bolt-nuts/hexagonal-head-bolt.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Bolt and Nuts</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/bolt-nut/bolt-nut.png" alt="Drywall/Chipboard Screw" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Made of high grade steel or stainless steel, bolts and nuts used to join two components in a cheap and efficient manner.</p>
+                    </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+            </div>
+          <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.10s">
+              <a href="./categories/riveters.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Riveters</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/riveters/riveter.png" alt="Riveters" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Manual and Pneumatic riveters from light duty to industrial production line work.</p>
+                    </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+          </div>
+          <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.11s">
+              <a href="./single-products/clinching-fasteners/clinching-fastener.html">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                  <div class="p-6 flex-grow">
+                      <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Clinching Fasteners</h3>
+                      <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                      <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                          <img src="../assets/single-products/clinching-fasteners/clinching-fastner-category.png" alt="Clinching Fasteners" class="max-w-full max-h-full object-contain">
+                      </div>
+                      <p class="text-sm md:text-base font-roboto mt-4">Self-Clinching fasteners are threaded nuts, studs, or standoffs that are mechanically pressed into sheet metal to provide solid fastening points.</p>
+                    </div>
+                  <div class="h-2 w-full bg-[#F9BD86]"></div>
+              </div>
+              </a>
+          </div>
+          <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.12s">
+            <a href="./single-products/power-tools/power-tools.html">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Power tools</h3>
+                    <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                    <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                        <img src="../assets/single-products/power-tools/powertool-category.png" alt="Clinching Fasteners" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <p class="text-sm md:text-base font-roboto mt-4">PATTA electric and cordless riveters and screw drivers are optimised for industrial scale use to fix rivets, self drilling screws and self tapping screws.</p>
+                  </div>
+                <div class="h-2 w-full bg-[#F9BD86]"></div>
+            </div>
+            </a>
+          </div>
+          <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.13s">
+            <a href="./categories/furniture-fasteners.html">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Furniture Fasteners</h3>
+                    <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                    <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                        <img src="../assets/single-products/furniture-fasteners/furniture-fastener-category.png" alt="Clinching Fasteners" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <p class="text-sm md:text-base font-roboto mt-4">Wholesaler of a wide range of products which include joint connector cap nut.</p>
+                  </div>
+                <div class="h-2 w-full bg-[#F9BD86]"></div>
+            </div>
+            </a>
+          </div>
+          <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.14s">
+            <a href="./single-products/shear-stud/shear-stud.html">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Shear Stud</h3>
+                    <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                    <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                        <img src="../assets/single-products/shear-connector/shear-stud-category.png" alt="Clinching Fasteners" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <p class="text-sm md:text-base font-roboto mt-4">Shear Connectors are used in construction for various RCC structures</p>
+                  </div>
+                <div class="h-2 w-full bg-[#F9BD86]"></div>
+            </div>
+            </a>
+          </div>
+          <div class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+            <a href="./single-products/capacitor/capacitor-discharge.html">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Capacitor Weld Studs</h3>
+                    <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                    <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                        <img src="../assets/single-products/shear-connector/capacitor-discharge-category.png" alt="Clinching Fasteners" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <p class="text-sm md:text-base font-roboto mt-4">CD studs are welded by using current which is stored in a bank of capacitors.</p>
+                  </div>
+                <div class="h-2 w-full bg-[#F9BD86]"></div>
+            </div>
+            </a>
+          </div>
+          <div  class="p-4 h-full wow animate__animated animate__fadeInUp" data-wow-delay="0.16s">
+            <a href="./single-products/weld-studs/weld-stud.html">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+                <div class="p-6 flex-grow">
+                    <h3 class="text-base md:text-lg font-semibold font-outfit mb-2 text-left">Weld Studs</h3>
+                    <div class="h-1 w-16 bg-orange-500 mb-4 text-left"></div>
+                    <div class="bg-[#002D62] p-4 flex justify-center items-center h-[200px]">
+                        <img src="../assets/single-products/weld-stud/weld-stud-category.png" alt="Clinching Fasteners" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <p class="text-sm md:text-base font-roboto mt-4">These are welded by resistance welding method. Most common application is in..</p>
+                  </div>
+                <div class="h-2 w-full bg-[#F9BD86]"></div>
+            </div>
+            </a>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-[#F5F5F5]">
+      <div class="container mx-auto">
+        <h2 class="text-2xl md:text-3xl font-outfit mb-8 text-center">Here From Our Happy Customers</h2>
+        <div class="relative flex items-center justify-center">
+          <!-- Left Arrow -->
+          <div class="hidden md:block absolute left-0">
+            <img id="prevBtn" src="../assets/icons/testimonial-left-arrow.png" class="w-15 h-15">
+          </div>
+          <!-- Testimonial Cards Container -->
+          <div id="testimonialContainer" class="flex overflow-hidden space-x-4 w-full">
+            <!-- Single Testimonial Card -->
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 w-[420px] flex-shrink-0">
+              <div class="flex justify-start items-center mb-4">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+              </div>
+              <h3 class="text-lg font-semibold font-roboto mb-2">Quality You Can Trust</h3>
+              <p class="text-sm font-roboto">Their screws, bolts, and nuts are of exceptional quality, and their customer service is always responsive and helpful.</p>
+              <div class="flex items-center mt-4">
+                <img src="../assets/icons/testimonial-user.png" alt="Customer Image" class="w-10 h-10 rounded-full mr-4">
+                <div class="text-left">
+                  <p class="text-sm font-semibold font-roboto">Hamza Mustafa</p>
+                  <p class="text-sm font-roboto">16-07-2024</p>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for other testimonial cards -->
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 w-[420px] flex-shrink-0">
+              <div class="flex justify-start items-center mb-4">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+              </div>
+              <h3 class="text-lg font-semibold font-roboto mb-2">Quality You Can Trust</h3>
+              <p class="text-sm font-roboto">Their screws, bolts, and nuts are of exceptional quality, and their customer service is always responsive and helpful.</p>
+              <div class="flex items-center mt-4">
+                <img src="../assets/icons/testimonial-user.png" alt="Customer Image" class="w-10 h-10 rounded-full mr-4">
+                <div class="text-left">
+                  <p class="text-sm font-semibold font-roboto">Mariam Ammar</p>
+                  <p class="text-sm font-roboto">16-07-2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 w-[420px] flex-shrink-0">
+              <div class="flex justify-start items-center mb-4">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+              </div>
+              <h3 class="text-lg font-semibold font-roboto mb-2">Quality You Can Trust</h3>
+              <p class="text-sm font-roboto">Their screws, bolts, and nuts are of exceptional quality, and their customer service is always responsive and helpful.</p>
+              <div class="flex items-center mt-4">
+                <img src="../assets/icons/testimonial-user.png" alt="Customer Image" class="w-10 h-10 rounded-full mr-4">
+                <div class="text-left">
+                  <p class="text-sm font-semibold font-roboto">Juzer YC</p>
+                  <p class="text-sm font-roboto">17-07-2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 w-[420px] flex-shrink-0">
+              <div class="flex justify-start items-center mb-4">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+              </div>
+              <h3 class="text-lg font-semibold font-roboto mb-2">Quality You Can Trust</h3>
+              <p class="text-sm font-roboto">Their screws, bolts, and nuts are of exceptional quality, and their customer service is always responsive and helpful.</p>
+              <div class="flex items-center mt-4">
+                <img src="../assets/icons/testimonial-user.png" alt="Customer Image" class="w-10 h-10 rounded-full mr-4">
+                <div class="text-left">
+                  <p class="text-sm font-semibold font-roboto">Yusuf Yc</p>
+                  <p class="text-sm font-roboto">17-07-2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 w-[420px] flex-shrink-0">
+              <div class="flex justify-start items-center mb-4">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+              </div>
+              <h3 class="text-lg font-semibold font-roboto mb-2">Quality You Can Trust</h3>
+              <p class="text-sm font-roboto">Their screws, bolts, and nuts are of exceptional quality, and their customer service is always responsive and helpful.</p>
+              <div class="flex items-center mt-4">
+                <img src="../assets/icons/testimonial-user.png" alt="Customer Image" class="w-10 h-10 rounded-full mr-4">
+                <div class="text-left">
+                  <p class="text-sm font-semibold font-roboto">Hussain HC</p>
+                  <p class="text-sm font-roboto">31-07-2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 w-[420px] flex-shrink-0">
+              <div class="flex justify-start items-center mb-4">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+                <img src="../assets/icons/testimonial-star.png" alt="Star Icon" class="w-6 h-6">
+              </div>
+              <h3 class="text-lg font-semibold font-roboto mb-2">Quality You Can Trust</h3>
+              <p class="text-sm font-roboto">Their screws, bolts, and nuts are of exceptional quality, and their customer service is always responsive and helpful.</p>
+              <div class="flex items-center mt-4">
+                <img src="../assets/icons/testimonial-user.png" alt="Customer Image" class="w-10 h-10 rounded-full mr-4">
+                <div class="text-left">
+                  <p class="text-sm font-semibold font-roboto">Mustafa ZD</p>
+                  <p class="text-sm font-roboto">16-07-2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Arrow -->
+          <div class="hidden md:block absolute right-0">
+            <img  id="nextBtn" src="../assets/icons/testimonial-right-arrow.png" class="w-15 h-15">
+          </div>
+        </div>
+
+      <div class="w-full flex justify-around items-center mt-3 gap-x-6">
+        <div class="block md:hidden">
+          <img  id="prevBtnMobile" src="../assets/icons/testimonial-left-arrow.png" class="w-10 h-10">
+        </div>
+        <div class="block md:hidden">
+          <img  id="nextBtnMobile" src="../assets/icons/testimonial-right-arrow.png" class="w-10 h-10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary-orange-600 py-8">
+    <div class="container mx-auto px-4 md:px-0">
+      <div class="flex flex-wrap justify-between text-white">
+        <!-- Section 1 -->
+        <div class="w-full md:w-1/4 mb-8 md:mb-0">
+          <div class="flex flex-col items-center md:block">
+          <h3 class="text-xl font-semibold font-outfit mb-4">Excel Trading Corporation</h3>
+          <div class="flex items-start my-4">
+           <img src="../assets/icons/footer-location.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+          <p class="text-base">
+            163, 1. Sadar Patrappa Rd Madrapet, <br>
+            Kumbarpet, Dodpete, Nagarathpete, <br>
+            Bengaluru - 560002
+          </p>
+          </div>
+        <div class="flex items-start my-2  md:my-4">
+          <img src="../assets/icons/footer-phone.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+          <p class="text-base">+919448239476/+919844049390</p>
+        </div>
+          <div class="flex items-start my-2 md:my-4">
+            <img src="../assets/icons/footer-email.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+           <p class="text-base">exceltradingcorp@gmail.com</p>
+          </div>
+          <div class="flex mt-4 space-x-4 md:mt-6">
+            <div class="bg-primary-gray-300 rounded-full w-10 h-10 flex items-center justify-center">
+              <img src="../assets/icons/facebook.png" alt="Facebook Icon">
+            </div>
+            <div class="bg-primary-gray-300 rounded-full w-10 h-10 flex items-center justify-center">
+              <img src="../assets/icons/google.png" alt="Twitter Icon">
+            </div>
+            <div class="bg-primary-gray-300 rounded-full w-10 h-10 flex items-center justify-center">
+              <img src="../assets/icons/twitter.png" alt="Google Plus Icon">
+            </div>
+            <div class="bg-primary-gray-300 rounded-full w-10 h-10 flex items-center justify-center">
+              <img src="../assets/icons/linkedIn.png" alt="LinkedIn Icon">
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Section 2 -->
+        <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
+          <div class="flex flex-col items-center md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Our Products</h3>
+            <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+              <li class="text-base mb-2">Self Drilling Screws</li>
+              <li class="text-base mb-2">Self Tapping Screws</li>
+              <li class="text-base mb-2">Blind Rivets</li>
+              <li class="text-base mb-2">Rivet Nut</li>
+              <li class="text-base mb-2 ">Anchors</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section 3 -->
+        <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
+          <div class="flex flex-col items-center md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Our Information</h3>
+            <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+              <li class="text-base mb-2">About us</li>
+              <li class="text-base mb-2">Our Policy</li>
+              <li class="text-base mb-2">Working Days</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section 4 -->
+        <div class="w-full md:w-1/4">
+          <h3 class="text-lg font-semibold font-outfit mb-4">Locate Us Here</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.105313629579!2d77.57725927381014!3d12.965112415023084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e188f8f01f%3A0xf166954560acacda!2sExcel%20Trading%20Corporation!5e0!3m2!1sen!2sin!4v1723037321158!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full md:w-[400px] h-[200px]"></iframe>
+        </div>
+      </div>
+
+      <div class="w-[80%] h-[2px] bg-primary-gray-300 mx-auto mt-8 mb-4"></div>
+    </div>
+    
+  </footer>
+
+  <script src="../assets/scripts/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
