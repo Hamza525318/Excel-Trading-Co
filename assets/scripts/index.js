@@ -11,6 +11,7 @@ const viewMoreProductsBtn = document.getElementById('view-more-products');
 const visibleTestimonials = 3; // Number of testimonials to show at a time
 let currentIndex = 0;
 const navLinks = document.querySelectorAll('.nav-link');
+const mobileHeader = document.getElementById('mobile-header-btn');
 
 viewMoreProductsBtn.addEventListener('click', (e) =>{
     e.preventDefault();
@@ -23,7 +24,17 @@ function removeActiveClasses() {
     navLinks.forEach(link => {
       link.classList.remove('active-link');
     });
-  }
+}
+
+if(mobileHeader != null){
+  mobileHeader.addEventListener('click',(e)=>{
+    console.log("function call")
+    document.getElementById('products-range-section').scrollIntoView({
+      behavior: "smooth",
+    })
+  })
+}
+
 
   // Add event listener to each link
   navLinks.forEach(link => {
@@ -38,6 +49,7 @@ menuBtn.addEventListener('click', () => {
   });
 
   function addSidebar() {
+    console.log("added sidebar");
     sidebar.classList.remove('slide-out');
     sidebar.classList.remove('hidden');
     sidebar.classList.add('slide-in')
@@ -48,31 +60,9 @@ menuBtn.addEventListener('click', () => {
     sidebar.classList.add('slide-out');
   }
 
-  closeBtn.addEventListener('click', toggleSidebar);
-  menuBtn.addEventListener('click', addSidebar);
+closeBtn.addEventListener('click', toggleSidebar);
+menuBtn.addEventListener('click', addSidebar);
   
-// function updateVisibility() {
-//     testimonials.forEach((testimonial, index) => {
-//         testimonial.style.display = (index >= currentIndex && index < currentIndex + visibleTestimonials) ? 'block' : 'none';
-//     });
-// }
-  
-// nextBtn.onclick = function() {
-//     if (currentIndex + visibleTestimonials < testimonials.length) {
-//         currentIndex++;
-//         updateVisibility();
-//     }
-// };
-  
-// prevBtn.onclick = function() {
-//     if (currentIndex > 0) {
-//         currentIndex--;
-//         updateVisibility();
-//     }
-// };
-  
-//       // Initialize visibility
-// updateVisibility();
 let scrollAmount = 0;
 const scrollStep = 450; // Adjust this value to match the width of your cards plus the margin
 
@@ -128,6 +118,11 @@ testimonialContainer.addEventListener('scroll', () => {
     nextBtn.style.pointerEvents = 'auto';
   }
 });
+
+function toggleDropdown() {
+  var dropdown = document.getElementById('dropdownMenu');
+  dropdown.classList.toggle('hidden');
+}
 
 // Initially check button state
 testimonialContainer.dispatchEvent(new Event('scroll'));

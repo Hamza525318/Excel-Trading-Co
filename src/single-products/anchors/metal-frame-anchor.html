@@ -19,7 +19,22 @@
     <title>Metal Frame Anchor</title>
 </head>
 <body>
-
+  <div class="fixed bottom-20 right-2 space-y-2 z-50">
+    <a href="https://wa.me/+919448239476" target="_blank" class="bg-green-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out">
+        <img src="../../../assets/icons/whatsapp-icon.png" alt="WhatsApp Icon" class="w-6 h-6">
+    </a>
+    <a href="mailto:etcyusuf@gmail.com" class="bg-blue-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+        <img src="../../../assets/icons/footer-email.png" alt="Email Icon" class="w-6 h-6">
+    </a>
+    <a href="tel:+919448239476" class="bg-orange-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+        <img src="../../../assets/icons/footer-phone.png" alt="Call Icon" class="w-6 h-6">
+    </a>
+   </div>
+   <div class="fixed bottom-4 right-2 z-50">
+    <a href="../contact-us.html" class="block bg-primary-blue-500 text-white py-[6px] px-4 rounded-lg shadow-lg text-center hover:bg-primary-blue-600 transition duration-300  ease-in-out">
+      Enquire Now
+    </a>
+   </div>
     <nav class="bg-primary-blue-500 p-4">
         <div class="container mx-auto flex justify-between items-center">
           <div class="text-white text-3xl font-bold font-outfit">
@@ -107,30 +122,97 @@
         </div>
       </nav>
           <!-- Sidebar for mobile view -->
-          <div id="sidebar" class="fixed hidden top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
+        <div id="sidebar" class="fixed font-poppins hidden top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
             <img src="../../../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
             <div class="w-full p-4">
-              <div class="text-lg font-bold font-outfit mb-2">Excel Trading Corporation</div>
-              <div class="h-1 w-[30%] bg-orange-500 mb-6"></div>
-              <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
-                <img src="../../../assets/icons/sidebar-home.png" alt="Home Icon" class="mr-4 w-5 h-5">
-                Home
-              </a>
-              <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
-                <img src="../../../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
-                About Us
-              </a>
-              <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
-                <img src="../../../assets/icons/sidebar-toolbox.png" alt="Products Icon" class="mr-4 w-5 h-5">
-                Products
-              </a>
-            <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
-            <img src="../../../assets/icons/sidebar-phone.png" alt="Contact Us Icon" class="mr-4 w-5 h-5">
-                Contact Us
-            </a>
+                <div class="text-lg font-bold font-poppins mb-4">Excel Trading Corporation</div>
+                <div class="h-1 w-[30%] bg-orange-500 mb-6"></div>
+                <a href="../../index.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+                    <img src="../../../assets/icons/sidebar-home.png" alt="Home Icon" class="mr-4 w-5 h-5">
+                    Home
+                </a>
+                <a href="../../about-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+                    <img src="../../../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
+                    About Us
+                </a>
+                <div class="flex justify-between items-center mb-4 w-full border-b border-b-white pb-2 cursor-pointer" onclick="toggleDropdown()">
+                    <div class="flex items-center">
+                        <img src="../../../assets/icons/sidebar-toolbox.png" alt="Products Icon" class="mr-4 w-5 h-5">
+                        Products
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="dropdownIcon" class="mr-4 w-5 h-5" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd" d="M12 16a1 1 0 01-.707-.293l-5-5a1 1 0 011.414-1.414L12 13.586l4.293-4.293a1 1 0 011.414 1.414l-5 5A1 1 0 0112 16z" clip-rule="evenodd"/>
+                    </svg>
+                    
+                </div>
+                <div class="hidden overflow-y-auto custom-scrollbar" id="dropdownMenu" style="max-height: 165px;">
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../categories/self-drilling-screws.html" class="block pl-10 py-2 text-sm">Self Drilling Screws</a>
+                  </li>
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../categories/self-tapping-screws.html" class="block pl-10 py-2 text-sm">Self Tapping Screws</a>
+                  </li>
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../single-products/drywall-chipboard/drywall-chipboard-screws.html" class="block pl-10 py-2 text-sm">Drywall Chipboard Screws</a>
+                  </li>
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../categories/blind-rivets.html" class="block pl-10 py-2 text-sm">Blind Rivets</a>
+                  </li>
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/colour-head-rivets/colour-head-rivet.html" class="block pl-10 py-2 text-sm">Colour Head Rivets</a>
+                  </li>
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../categories/rivet-nuts.html" class="block pl-10 py-2 text-sm">Rivet Nut</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../categories/anchors.html" class="block pl-10 py-2 text-sm">Anchors</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/nord-lock/nord-lock.html" class="block pl-10 py-2 text-sm">Nord Lock</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/bolt-nuts/hexagonal-head-bolt.html" class="block pl-10 py-2 text-sm">Bolt Nuts</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../categories/riveters.html" class="block pl-10 py-2 text-sm">Riveters</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/clinching-fasteners/clinching-fastener.html" class="block pl-10 py-2 text-sm">Clinching Fasteners</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/power-tools/power-tools.html" class="block pl-10 py-2 text-sm">Power tools</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../single-products/bits-socket/bits-socket.html" class="block pl-10 py-2 text-sm">Bits Sockets</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/shear-stud/shear-stud.html" class="block pl-10 py-2 text-sm">Shear stud</a>
+                  </li> 
+                  <li class="flex items-center ml-5 mb-2 gap-x-2">
+                    <img src="../../../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                    <a href="../../single-products/capacitor/capacitor-discharge.html" class="block pl-10 py-2 text-sm">Capacitor discharge</a>
+                  </li> 
+                </div>
+                <a href="../../contact-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+                    <img src="../../../assets/icons/sidebar-phone.png" alt="Contact Us Icon" class="mr-4 w-5 h-5">
+                    Contact Us
+                </a>
+            </div>
         </div>
-    </div>
-
     <section class="contact-section h-36 md:64 flex justify-center items-center">
       <div class="overlay"></div>
       <div class="content text-white ml-6">
@@ -142,7 +224,7 @@
      </section>
  
     <section class="py-16 bg-primary-gray-100 px-6 md:px-16">
-        <div class="container mx-auto flex flex-col md:flex-row items-start gap-8">
+        <div class="container mx-auto flex flex-col flex-col-reverse md:flex-row items-start gap-8">
           <!-- Left Column (Text and Buttons) -->
           <div class="w-full wow animate__animated animate__fadeInLeft md:w-1/2">
             <!-- Suitable For -->
