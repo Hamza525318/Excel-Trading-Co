@@ -60,35 +60,31 @@
     z-index: 2;
   }
 
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #F9BD86;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 50;
-    min-width: 250px;
-    margin-top: 12px;
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Shows dropdown on hover */
   }
+  
+  .dropdown-menu div{
+    border-bottom: 1px solid white;
+  }
+
   .dropdown-menu a {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    color: #333;
-    text-decoration: none;
-  }
-  .dropdown-menu a:hover {
-    background-color: #F9BD86;
+    display: block;
     color: white;
   }
-  .dropdown-menu img {
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
+  
+  .dropdown-menu div:last-child {
+    border-bottom: none; /* Remove border from the last item */
   }
-  .dropdown:hover .dropdown-menu {
-    display: block;
+  
+  .dropdown-menu {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/* Subtle shadow for dropdown */
+    padding: 5px 0; /* Padding around the dropdown */
+    z-index: 1000; /* Ensures dropdown is above other content */
+    top: 100%; /* Position right below the dropdown trigger */
+    left: -20px;
   }
+  
 
   .btn-youtube {
     background-color: #0073E6;
@@ -142,6 +138,25 @@
   transform: translateY(-2px); /* Adds a slight rise effect on hover */
 }
 
+.contact-card {
+  /* Light background for better readability */
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  width: 75%; /* Fixed width for consistency */
+  min-height: 60px; /* Minimum height to accommodate content uniformly */
+  text-align: left;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
 
 
   @keyframes slideIn {
@@ -170,6 +185,9 @@
     transform: translate(0px, 0px) rotate(0deg);
     opacity: 1;
   }
+  80%{
+    opacity: 0.5;
+  }
   100% {
     transform: translate(100vw, 100vh) rotate(360deg);
     opacity: 0;
@@ -180,18 +198,36 @@
   position: absolute;
   width: 50px; /* Adjust size as needed */
   height: 50px;
-  animation: moveRandomly 10s infinite linear;
+  animation: moveRandomly 5s infinite linear;
   /* Random start positions for each image */
 }
 
-.bolt-nut-image:nth-child(1) { top: 20%; left: 10%; }
-.bolt-nut-image:nth-child(2) { top: 50%; left: 80%; }
-.bolt-nut-image:nth-child(3) { top: 80%; left: 40%; }
-.bolt-nut-image:nth-child(4) { top: 10%; left: 60%; }
+.bolt-nut-image:nth-child(1) { top: 10%; left: 15%; }
+.bolt-nut-image:nth-child(2) { top: 70%; left: 85%; }
+.bolt-nut-image:nth-child(3) { top: 30%; left: 65%; }
+.bolt-nut-image:nth-child(4) { top: 50%; left: 25%; }
+.bolt-nut-image:nth-child(5) { top: 85%; left: 45%; }
+.bolt-nut-image:nth-child(6) { top: 20%; left: 75%; }
+.bolt-nut-image:nth-child(7) { top: 55%; left: 10%; }
+.bolt-nut-image:nth-child(8) { top: 40%; left: 60%; }
+.bolt-nut-image:nth-child(8) { top: 45%; left: 10%; }
+.bolt-nut-image:nth-child(8) { top: 65%; left: 5%; }
+
+
 
 @media (min-width: 768px) {
   
   .text-box h3 {
     font-size: 2.25rem; 
+  }
+  
+  .sidebar{
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px){
+  .contact-card{
+    width: 100%;
   }
 }

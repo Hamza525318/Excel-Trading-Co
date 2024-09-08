@@ -7,18 +7,12 @@ const testimonials = document.querySelectorAll('.testimonial-card');
 const menuBtn = document.getElementById('menu-btn');
 const sidebar = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-btn');
-const viewMoreProductsBtn = document.getElementById('view-more-products');
+// const viewMoreProductsBtn = document.getElementById('view-more-products');
 const visibleTestimonials = 3; // Number of testimonials to show at a time
 let currentIndex = 0;
 const navLinks = document.querySelectorAll('.nav-link');
 const mobileHeader = document.getElementById('mobile-header-btn');
 
-viewMoreProductsBtn.addEventListener('click', (e) =>{
-    e.preventDefault();
-    document.getElementById('products-range-section').scrollIntoView({
-      behavior: "smooth",
-    })
-})
 
 function removeActiveClasses() {
     navLinks.forEach(link => {
@@ -127,3 +121,5 @@ function toggleDropdown() {
 // Initially check button state
 testimonialContainer.dispatchEvent(new Event('scroll'));
 console.log("javascript executed");
+
+toggleSidebar();

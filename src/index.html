@@ -37,82 +37,69 @@
     </a>
    </div>
 
-  <nav class="bg-primary-blue-500 p-4">
+   <nav class="bg-primary-blue-500 p-4">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-white text-3xl font-bold font-outfit">
-        ETC
+        <a href="./index.html">ETC</a>
       </div>
       <div class="hidden md:flex space-x-8 font-roboto">
-        <a href="#" class="text-white text-base">Home</a>
-        <a href="/src/about-us.html" class="text-white text-base">About Us</a>
+        <a href="./index.html" class="text-white text-base">Home</a>
+        <a href="./about-us.html" class="text-white text-base">About Us</a>
         <div class="relative dropdown">
-          <a href="#" class="text-white text-base flex items-center">Products</a>
+          <a href="#" class="text-white text-base flex items-center">Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
           <!-- Dropdown Menu -->
-          <div class="dropdown-menu">
-            <a href="#">
-              <img src="../assets/products/self-drilling-screws.png" alt="Product 1">
-            <div>
-              <h4 class="font-semibold text-outfit text-sm">Self drillling screws</h4>
-              <p class="text-sm">High-quality fasteners for industrial use.</p>
+          <div class="dropdown-menu hidden absolute bg-[#004d99] shadow-lg mt-1 rounded-md w-60">
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="./categories/self-drilling-screws.html" class="block px-4 py-2 text-sm">Self Drilling Screws</a>
             </div>
-            </a>
-          <a href="#">
-            <img src="../assets/products/drywall-chipboard-screw.png" alt="Product 2">
-            <div>
-              <h4 class="font-semibold text-outfit text-sm">Drywall Screws</h4>
-              <p class="text-sm">Durable tools for all your construction needs.</p>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="./categories/self-tapping-screws.html" class="block px-4 py-2 text-sm">Self Tapping Screws</a>
             </div>
-          </a>
-          <a href="#">
-            <img src="../assets/products/blind-rivets.png" alt="Product 3">
-            <div>
-              <h4 class="font-semibold text-outfit text-sm">Blind Rivets</h4>
-              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="./single-products/drywall-chipboard/drywall-chipboard-screws.html" class="block px-4 py-2 text-sm">Drywall Chipboard Screws</a>
             </div>
-          </a>
-          <a href="#">
-            <img src="../assets/products/self-tapping-screws.png" alt="Product 4">
-            <div>
-              <h4 class="font-semibold text-outfit text-sm">Self Tapping screws</h4>
-              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="./categories/blind-rivets.html" class="block px-4 py-2 text-sm">Blind rivets</a>
             </div>
-          </a>
-          <a href="#">
-            <img src="../assets/products/rivet-nut.png" alt="Product 5">
-            <div>
-              <h4 class="font-semibold text-outfit text-sm">Rivet nuts</h4>
-              <p class="text-sm">Precision instruments for accurate measurements.</p>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="./categories/rivet-nuts.html" class="block px-4 py-2 text-sm">Rivet Nuts</a>
             </div>
-          </a>
-          <a href="#">
-            <img src="../assets/products/anchors.png" alt="Product 6">
-            <div>
-              <h4 class="font-semibold text-outfit text-sm">Anchors</h4>
-              <p class="text-sm">Precision instruments for accurate measurements.</p>
-            </div>
-          </a>
-          <div class="flex justify-center">
-            <button class="bg-primary-orange-500 text-white my-2 py-1 px-6 rounded-md font-roboto text-sm hover:bg-orange-600 transition duration-300 ease-in-out" id="view-more-products">
-              View more
-            </button>
-            </div>
-          <!-- <a href="#">
-            <img src="../assets/products/nord-lock.png" alt="Product 7">
-            <div>
-              <h4 class="font-bold text sm">Nord lock</h4>
-              <p class="text-sm">Precision instruments for accurate measurements.</p>
-            </div>
-          </a>
-          <a href="#">
-            <img src="../assets/products/nut-bolt.png" alt="Product 8">
-            <div>
-              <h4 class="font-bold text sm">Bolt and Nuts</h4>
-              <p class="text-sm">Precision instruments for accurate measurements.</p>
-            </div>
-          </a> -->
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./categories/anchors.html" class="block px-4 py-2 text-sm">Anchors</a>
+          </div>
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./categories/riveters.html" class="block px-4 py-2 text-sm">Riveters</a>
+          </div>
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./single-products/clinching-fasteners/clinching-fastener.html" class="block px-4 py-2 text-sm">Clinching fasteners</a>
+          </div>
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./categories/furniture-fasteners.html" class="block px-4 py-2 text-sm">Furniture fasteners</a>
+          </div>
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./single-products/bits-socket/bits-socket.html" class="block px-4 py-2 text-sm">Bits Sockets</a>
+          </div>
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./single-products/shear-stud/shear-stud.html" class="block px-4 py-2 text-sm">Shear stud</a>
+          </div>
+          <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+            <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+            <a href="./single-products/capacitor/capacitor-discharge.html" class="block px-4 py-2 text-sm">Capacitor discharge</a>
+          </div>
           </div>
         </div>
-        <a href="/src/contact-us.html" class="text-white text-base">Contact Us</a>
+        <a href="./contact-us.html" class="text-white text-base">Contact Us</a>
       </div>
       <div class="md:hidden flex items-center">
         <button id="menu-btn" class="text-white focus:outline-none">
@@ -123,17 +110,18 @@
       </div>
     </div>
   </nav>
+  
       <!-- Sidebar for mobile view -->
-      <div id="sidebar" class="fixed font-poppins hidden top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
+      <div id="sidebar" class="fixed hidden font-poppins top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
         <img src="../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
         <div class="w-full p-4">
             <div class="text-lg font-bold font-poppins mb-4">Excel Trading Corporation</div>
             <div class="h-1 w-[30%] bg-orange-500 mb-6"></div>
-            <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <a href="./index.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
                 <img src="../assets/icons/sidebar-home.png" alt="Home Icon" class="mr-4 w-5 h-5">
                 Home
             </a>
-            <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <a href="./about-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
                 <img src="../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
                 About Us
             </a>
@@ -194,6 +182,10 @@
               </li> 
               <li class="flex items-center ml-5 mb-2 gap-x-2">
                 <img src="../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                <a href="./categories/furniture-fasteners.html" class="block pl-10 py-2 text-sm">Furniture Fasteners</a>
+              </li> 
+              <li class="flex items-center ml-5 mb-2 gap-x-2">
+                <img src="../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
                 <a href="./single-products/power-tools/power-tools.html" class="block pl-10 py-2 text-sm">Power tools</a>
               </li> 
               <li class="flex items-center ml-5 mb-2 gap-x-2">
@@ -206,13 +198,27 @@
               </li> 
               <li class="flex items-center ml-5 mb-2 gap-x-2">
                 <img src="../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
+                <a href="./single-products/shear-stud/shear-stud.html" class="block pl-10 py-2 text-sm">Weld stud</a>
+              </li> 
+              <li class="flex items-center ml-5 mb-2 gap-x-2">
+                <img src="../assets/icons/single-nut-bolt.png" alt="Bullet Icon" class="mr-2 w-4 h-4">
                 <a href="./single-products/capacitor/capacitor-discharge.html" class="block pl-10 py-2 text-sm">Capacitor discharge</a>
               </li> 
             </div>
-            <a href="#" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+            <a href="./contact-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
                 <img src="../assets/icons/sidebar-phone.png" alt="Contact Us Icon" class="mr-4 w-5 h-5">
                 Contact Us
             </a>
+            <div class="mt-20 absolute bottom-10 left-0">
+              <div class="flex items-center gap-x-2 w-full my-4">
+                <img src="../assets/icons/footer-location.png"  class="w-5 h-5">
+                <p class="text-xs underline text-white font-poppins">163, 1. Sadar Patrappa Rd Madrapet,Kumbarpet, Dodpete, Nagarathpete,Bengaluru - 560002</p>
+              </div>
+              <div class="flex items-center gap-x-2 w-full my-4">
+                <img src="../assets/icons/footer-phone.png" class="w-5 h-5">
+                <p class="text-xs text-white underline font-poppins">+91-9448239476/+91-9844049390</p>
+              </div>
+            </div>
         </div>
       </div>
 
@@ -235,30 +241,31 @@
       </section>
 
       <!-- Hero Section start -->
-      <section class="hidden md:flex items-center justify-between h-[85vh] bg-hero-bg bg-gradient">
-        <div class="w-full h-full flex justify-center items-center">
-          <div class="w-3/5 p-8 bg-blur relative wow animate__animated animate__fadeInLeft">
-            <h1 class="text-5xl md:text-6xl font-bold font-outfit text-black mb-4">Excel Trading<br/> Corporation</h1>
-            <p class="text-base md:text-lg font-roboto text-black mb-4">
-              Horizon Inc. is a leading importer and distributor of fasteners. With over 15 years of experience in the field, the founders of Horizon Inc are well placed to understand customer requirements and offer solutions for their fastening needs with a focus on quality and customer service.
+      <section class="hidden md:w-screen md:flex flex-col items-center justify-center h-[85vh] bg-hero-bg bg-gradient">
+        <div class="w-3/4 p-8 bg-blur animate__animated animate__fadeInLeft">
+            <h1 class="md:text-6xl text-center font-bold font-outfit text-black mb-4">Excel Trading Corporation</h1>
+            <p class="text-base md:text-lg text-center font-roboto text-black mb-4">
+                Horizon Inc. is a leading importer and distributor of fasteners. With over 15 years of experience in the field, the founders of Horizon Inc are well placed to understand customer requirements and offer solutions for their fastening needs with a focus on quality and customer service.
             </p>
-            <button class="mt-4 bg-primary-orange-500 text-white py-[6px] px-12 rounded-xl font-roboto">Read More</button>
-            <div class="absolute right-0 top-0 bottom-0 red-line"></div>
-          </div>
-          <div class="w-2/5">
-            <!-- Right section (empty for now) -->
-            <div class="wow animate__animated animate__fadeInRight">
-                <img src="https://via.placeholder.com/200" alt="Fasteners" class="rounded-lg shadow-lg mb-4">
-              </div>
-          </div>
+            <div class="w-full flex justify-center">
+              <button class="mt-4 bg-primary-orange-500 mx-auto text-white py-2 px-12 rounded-full font-roboto md:px-20"><a href="./about-us.html">Read More</a></button>
+            </div>
+            
         </div>
         <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-          <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
-          <img src="../assets/bg-images/nut_bg.png" alt="Nut" class="bolt-nut-image">
-          <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
-          <img src="../assets/bg-images/nut_bg.png" alt="Nut" class="bolt-nut-image">
+            <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+            <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+            <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+            <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+            <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+            <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+            <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+            <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+            <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+            <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
         </div>
-      </section>
+    </section>
+    
 
       <section class=" bg-hero-bg bg-gradient wow animate__animated animate__fadeInLeft h-[60vh] flex items-center py-12 px-4 shadow-xl md:hidden">
         <!-- Title -->
@@ -276,6 +283,14 @@
           Our Products
         </button>
         </div>
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+          <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+          <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+          <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+          <img src="../assets/bg-images/nut_bg.png" alt="Bolt" class="bolt-nut-image">
+          <img src="../assets/icons/dropdown-bolt-icon.png" alt="Nut" class="bolt-nut-image">
+      </div>
         </div>
       </section>
 
@@ -364,9 +379,9 @@
               <img src="../../../assets/icons/cta-tool2.png" alt="Icon 2" class="w-8 h-8 md:w-16 md:h-16 self-end md:self-auto">
             </div>
             <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
-            <button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+            <a href="tel:+919448239476"><button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
                 Contact Now
-            </button>
+            </button></a>
         </div>
       </section>
       
@@ -846,6 +861,8 @@
 
 
   <script src="../assets/scripts/index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../assets/scripts/products.js"></script>
+  <!-- <script src="../assets/scripts/animation.js"></script> -->
+  
 </body>
 </html>
