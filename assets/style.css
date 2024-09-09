@@ -140,14 +140,14 @@
 
 .contact-card {
   /* Light background for better readability */
-  padding: 20px;
+  padding: 15px;
   margin: 10px 0;
   display: flex;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   border-radius: 8px;
-  width: 75%; /* Fixed width for consistency */
-  min-height: 60px; /* Minimum height to accommodate content uniformly */
+  width: 70%; /* Fixed width for consistency */
+  min-height: 50px; /* Minimum height to accommodate content uniformly */
   text-align: left;
 }
 

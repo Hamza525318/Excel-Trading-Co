@@ -222,16 +222,16 @@
             <h2 class="text-[#00396F] text-2xl font-bold font-outfit mb-2">Get in touch With Us</h2>
             <div class="h-1 w-16 bg-[#F9BD86] mb-4"></div>
             <p class="text-lg font-poppins mb-6">We Would Love To Hear From You</p>
-            <form name="contact-form"  method="POST" data-netlify="true">
+            <form name="contact-form" action="./success.html" method="POST" data-netlify="true">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 font-poppins">
-                <input type="text" name="name" placeholder="First Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]">
-                <input type="email" name="email" placeholder="Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]">
+                <input required type="text" name="name" placeholder="First Name" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]">
+                <input  type="email" name="email" placeholder="Email" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]">
               </div>
               <div class="mb-4">
-                <input type="text" name="phoneNumber" placeholder="Contact Number" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]">
+                <input required type="text" name="phoneNumber" placeholder="Contact Number" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]">
               </div>
               <div class="mb-6">
-                <textarea placeholder="Your Message" name="message" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]" rows="5"></textarea>
+                <textarea required placeholder="Your Message" name="message" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#00396F]" rows="5"></textarea>
               </div>
               <button type="submit" class="bg-[#FF8C42] text-white py-2 px-8 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
                 Submit Message
@@ -243,19 +243,19 @@
            <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
             <div class="space-y-6 font-poppins text-white">
               <!-- Consistently styled cards -->
-              <div class="contact-card bg-primary-blue-400 float-left">
+              <div class="contact-card bg-primary-blue-400 float-left wow animate__animated animate__fadeInRight">
                 <img src="../assets/icons/clock_orange.png" alt="Time Icon" class="icon">
                 <p>Office Timings: 10:00AM To 7:00PM</p>
               </div>
-              <div class="contact-card bg-primary-blue-400 float-right">
+              <div class="contact-card bg-primary-blue-400 float-right wow animate__animated animate__fadeInLeft">
                 <img src="../assets/icons/location_orange.png" alt="Location Icon" class="icon">
                 <p>63, 1, Sadar Patrappa Rd, Dodpete, Nagarathpete, Bengaluru</p>
               </div>
-              <div class="contact-card bg-primary-blue-400 float-left">
+              <div class="contact-card bg-primary-blue-400 float-left wow animate__animated animate__fadeInRight">
                 <img src="../assets/icons/phone_orange.png" alt="Phone Icon" class="icon">
                 <p>+91-9448239476 / +91-9844049390</p>
               </div>
-              <div class="contact-card bg-primary-blue-400 float-right">
+              <div class="contact-card bg-primary-blue-400 float-right wow animate__animated animate__fadeInLeft">
                 <img src="../assets/icons/email_orange.png" alt="Email Icon" class="icon">
                 <a href="mailto:etcyusuf@gmail.com">etcyusuf@gmail.com</a>
               </div>

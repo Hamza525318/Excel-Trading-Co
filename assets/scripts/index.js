@@ -118,6 +118,10 @@ function toggleDropdown() {
   dropdown.classList.toggle('hidden');
 }
 
+function submitForm(e){
+  alert("Form submitted successfully");
+}
+
 // Initially check button state
 testimonialContainer.dispatchEvent(new Event('scroll'));
 console.log("javascript executed");
