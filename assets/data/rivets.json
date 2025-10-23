@@ -1,0 +1,89 @@
+{
+    "rivets":[
+        {
+            "name":"Open End Blind Rivet",
+            "advantages":["Strong but lower cost fastener","Ideal for wide range of application",
+            "Available in a variety of materials","Dome, countersunk or large flange head styles",
+            "Painted color finishes available to match surrounding"],
+            "applications":["Office furniture","Automotive","Construction","Building"],
+            "image": "../../../assets/single-products/open-end-rivet.png"
+        },
+        {
+            "name":"Multi-Grip Blind Rivet",
+            "advantages":["Optimum clamp-up force",
+            "Accommodates oversized and irregular sized holes",
+            "High mandrel head retention",
+            "Vibration and moisture resistant",
+            "Reduced inventory, it can replace open type up to the size"],
+            "applications":["Office furniture","Automotive","Construction","Building"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"Sealed Blind Rivet",
+            "advantages":["Unique cup shaped end configuration seals tight preventing passage of vapor or liquid through set rivet",
+            "Provides greater tensile and shear strength than equivalent open end mandrel retention",
+            "Available in a variety of materials.",
+            "Dome or countersunk head style."],
+            "applications":["Containers","Air Conditioning","Construction","Ship Building Industry and Cladding"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"Bulb Tite Rivet",
+            "advantages":[
+            "Resists pull-out and cracking the work piece",
+            "Excellent for brittle and soft materials like plastics",
+            "Extra large secondary head provides more bearing surface",
+            "With the wide spreading tail, this rivet has a greater tolerance of oversized holes and offer a wide grip range"],
+            "applications":["Wood","Insulation","Plastic","Plastic Boards"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"High Strength HK-Lok",
+            "advantages":[
+            "Locked, rattle free mandrel",
+            "Superior shear and tensile strength, soft and brittle materials inclusive",
+            "Provides excellent integrity",
+            "Fill irregular holes"],
+            "applications":["Automotive industry","Truck building","Construction","Coach work"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"Anlock In-Bolt",
+            "advantages":[
+            "High Shear and Tensile Strength",
+            "Superior holding power (clamp-up)",
+            "Fastens over wide grip range",
+            "Locking feature prevents loosening of mandrel from vibration"],
+            "applications":["Automotive industry","Truck building","Construction work","Containers","Coach work"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"Anlock Out-Bolt",
+            "advantages":[
+            "High Shear and Tensile Strength",
+            "Superior holding power (clamp-up)",
+            "Fastens over wide grip range",
+            "Locking feature prevents loosening of mandrel from vibration"],
+            "applications":["Automotive industry","Truck building","Construction work","Containers","Coach work"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"Anlock Out-Bolt",
+            "advantages":[
+            "High Shear and Tensile Strength",
+            "Superior holding power (clamp-up)",
+            "Fastens over wide grip range",
+            "Locking feature prevents loosening of mandrel from vibration"],
+            "applications":["Automotive industry","Truck building","Construction work","Containers","Coach work"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        },
+        {
+            "name":"Peel Blind Rivet",
+            "advantages":[
+            "Provide large secondary bearing surface",
+            "Exceptional pull-up / clamp-up properties"],
+            "applications":["Plaster Board","Furniture","Plastic framed window properties"],
+            "image": "../../../assets/single-products/multi-grip-rivet.png"
+        }
+    ]
+}

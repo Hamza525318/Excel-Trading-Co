@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+.bg-blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.red-line {
+    border-left: 2px solid red;
+    height: 100%;
+}
+.bg-gradient {
+    background: linear-gradient(90deg, rgba(242, 204, 171, 1) 0%, rgba(255, 236, 210, 1) 50%, rgba(242, 204, 171, 1) 100%);
+} 
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .slide-in {
+    animation: slideIn 0.5s forwards;
+  }
+  .slide-out {
+    animation: slideOut 0.5s forwards;
+  }
+
+  .contact-section {
+    background-image: url('../assets/bg-images/bolts-nuts-background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .contact-section {
+    background-image: url('../assets/bg-images/bolts-nuts-background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.text-box h3 {
+  font-size: 1.25rem; 
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: #fff; 
+}
+
+
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Shows dropdown on hover */
+  }
+  
+  .dropdown-menu div{
+    border-bottom: 1px solid white;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    color: white;
+  }
+  
+  .dropdown-menu div:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  }
+  
+  .dropdown-menu {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/* Subtle shadow for dropdown */
+    padding: 5px 0; /* Padding around the dropdown */
+    z-index: 1000; /* Ensures dropdown is above other content */
+    top: 100%; /* Position right below the dropdown trigger */
+    left: -20px;
+  }
+  
+
+  .btn-youtube {
+    background-color: #0073E6;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+  }
+  .btn-youtube img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  #dropdownMenu.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #FF8C42 #002D62; /* Orange scroll thumb on dark blue track */
+}
+
+#dropdownMenu::-webkit-scrollbar {
+    width: 8px;
+}
+
+#dropdownMenu::-webkit-scrollbar-track {
+    background: #002D62;
+}
+
+#dropdownMenu::-webkit-scrollbar-thumb {
+    background-color: #FF8C42;
+    border-radius: 20px;
+    border: 3px solid #002D62;
+}
+
+.custom-scrollbar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+  transform: translateY(0px);
+}
+
+.custom-scrollbar a:hover {
+  background-color: rgba(255, 140, 66, 0.7); /* Slightly deeper orange background on hover */
+  transform: translateY(-2px); /* Adds a slight rise effect on hover */
+}
+
+.contact-card {
+  /* Light background for better readability */
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  width: 70%; /* Fixed width for consistency */
+  min-height: 50px; /* Minimum height to accommodate content uniformly */
+  text-align: left;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+
+
+  @keyframes slideIn {
+    from {
+      right: -75%;
+    }
+    to {
+      right: 0;
+    }
+  }
+  @keyframes slideOut {
+    from {
+      right: 0;
+    }
+    to {
+      right: -75%;
+    }
+  }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes moveRandomly {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 1;
+  }
+  80%{
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(100vw, 100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.bolt-nut-image {
+  position: absolute;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  animation: moveRandomly 5s infinite linear;
+  /* Random start positions for each image */
+}
+
+.bolt-nut-image:nth-child(1) { top: 10%; left: 15%; }
+.bolt-nut-image:nth-child(2) { top: 70%; left: 85%; }
+.bolt-nut-image:nth-child(3) { top: 30%; left: 65%; }
+.bolt-nut-image:nth-child(4) { top: 50%; left: 25%; }
+.bolt-nut-image:nth-child(5) { top: 85%; left: 45%; }
+.bolt-nut-image:nth-child(6) { top: 20%; left: 75%; }
+.bolt-nut-image:nth-child(7) { top: 55%; left: 10%; }
+.bolt-nut-image:nth-child(8) { top: 40%; left: 60%; }
+.bolt-nut-image:nth-child(8) { top: 45%; left: 10%; }
+.bolt-nut-image:nth-child(8) { top: 65%; left: 5%; }
+
+
+
+@media (min-width: 768px) {
+  
+  .text-box h3 {
+    font-size: 2.25rem; 
+  }
+  
+  .sidebar{
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px){
+  .contact-card{
+    width: 100%;
+  }
+}
