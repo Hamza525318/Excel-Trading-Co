@@ -369,7 +369,7 @@
               Excel trading corporation is a leading stockists & Distributors for fasteners, leverages over 53 years of experience to understand & meet customer requirements, focusing on quality & service.
             </p>
             <div class="w-full flex justify-center gap-4 flex-wrap">
-              <a href="javascript:void(0)" onclick="openModal()" 
+              <a href="./contact-us.html" 
                  class="bg-primary-orange-500 text-white py-2 px-8 rounded-full font-roboto hover:bg-orange-600 transition">
                 Request a Quote
                </a>
@@ -409,9 +409,10 @@
         </p>
         <!-- Button -->
         <div class="grid justify-center gap-y-3">
-        <a href="javascript:void(0)" onclick="openModal()" class="bg-primary-orange-500 text-white py-2 px-8 rounded-full font-roboto text-lg hover:bg-orange-600 transition">
-          Request a quote
-          </a>
+          <a href="./contact-us.html" 
+                 class="bg-primary-orange-500 text-white py-2 px-8 rounded-full font-roboto hover:bg-orange-600 transition">
+                Request a Quote
+               </a>
           <a href="/assets/EXCEL - profile.pdf" class="bg-primary-orange-500 text-white py-2 px-8 rounded-full font-roboto text-lg hover:bg-orange-600 transition">
             Download Catalogue
             </a>
@@ -998,44 +999,6 @@
   <script src="../assets/scripts/index.js"></script>
   <script src="../assets/scripts/products.js"></script>
   <!-- <script src="../assets/scripts/animation.js"></script> -->
-
-  <!-- Request a Quote Modal -->
-<div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-  <div class="bg-white rounded-xl shadow-xl p-8 w-full max-w-lg relative animate__animated animate__zoomIn">
-    <!-- Close button -->
-    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-
-    <!-- Modal Content -->
-    <h2 class="text-2xl font-bold mb-4 text-center text-[#143141]">Request a Quote</h2>
-    <p class="mb-6 text-center text-gray-600">Fill in your details and we’ll get back to you shortly.</p>
-    
-    <form action="mailto:info@exceltrading.in" method="post" enctype="text/plain" class="space-y-4">
-      <input type="text" name="name" placeholder="Your Name / Company" 
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#c7671b]" required>
-      <input type="email" name="email" placeholder="Your Email" 
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#c7671b]" required>
-      <input type="tel" name="phone" placeholder="Your Phone" 
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#c7671b]">
-      <textarea name="message" placeholder="Products, Sizes, or Quantity Needed" rows="4" 
-                class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#c7671b]" required></textarea>
-      <button type="submit" 
-              class="bg-[#c7671b] text-white py-3 px-8 rounded-lg font-bold hover:bg-[#143141] transition-all duration-300 w-full">
-        Submit Request
-      </button>
-    </form>
-  </div>
-</div>
-
-<script>
-  function openModal() {
-    document.getElementById('quoteModal').classList.remove('hidden');
-    document.getElementById('quoteModal').classList.add('flex'); // ensures centering
-  }
-  function closeModal() {
-    document.getElementById('quoteModal').classList.add('hidden');
-    document.getElementById('quoteModal').classList.remove('flex');
-  }
-</script>
 
 </body>
 </html>
