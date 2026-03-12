@@ -39,18 +39,19 @@
       Enquire Now
     </a>
    </div>
-   <nav class="bg-primary-blue-500 p-4">
+   <nav class="bg-dark-blue-500 p-4">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-white text-3xl font-bold font-outfit">
-        <a href="../index.html"><img class="w-16 md:w-20" src="../../assets/company/excel_trading_logo.PNG"/></a>
+        <a href='/'><img class="w-16 md:w-20 h-auto object-contain" alt="Excel Trading Corporation Logo" src="../../../assets/company/EXCEL-LOGO.png"/></a>
       </div>
       <div class="hidden md:flex space-x-8 font-roboto">
         <a href="../index.html" class="text-white text-base">Home</a>
         <a href="../about-us.html" class="text-white text-base">About Us</a>
+        <a class='text-white text-base' href='/blogs'>Blogs</a>
         <div class="relative dropdown">
           <a href="#" class="text-white text-base flex items-center">Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
           <!-- Dropdown Menu -->
-          <div class="dropdown-menu hidden absolute bg-[#004d99] shadow-lg mt-1 rounded-md w-60">
+          <div class="dropdown-menu hidden absolute bg-dark-blue-500 shadow-lg mt-1 rounded-md w-60">
             <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
               <img class="w-5 h-5" src="../../assets/icons/dropdown-bolt-icon.png"/>
               <a href="../categories/self-drilling-screws.html" class="block px-4 py-2 text-sm">Self Drilling Screws</a>
@@ -114,7 +115,7 @@
   </nav>
   
       <!-- Sidebar for mobile view -->
-      <div id="sidebar" class="fixed hidden font-poppins top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
+      <div id="sidebar" class="fixed hidden font-poppins top-0 right-0 w-[75%] z-[999] h-full bg-dark-blue-500 text-white flex flex-col items-start">
         <img src="../../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
         <div class="w-full p-4">
             <div class="text-lg font-bold font-poppins mb-4">Excel Trading Corporation</div>
@@ -126,6 +127,9 @@
             <a href="../about-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
                 <img src="../../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
                 About Us
+            </a>
+            <a class='flex items-center mb-4 w-full border-b border-b-white pb-2' href='/blogs'>
+             Blogs
             </a>
             <div class="flex justify-between items-center mb-4 w-full border-b border-b-white pb-2 cursor-pointer" onclick="toggleDropdown()">
                 <div class="flex items-center">
@@ -231,10 +235,6 @@
         <div class="text-box text-center text-white font-poppins">
             <h3 class="text-lg md:text-2xl font-bold">BLIND RIVETS</h3>
             <p class="text-sm md:text-base tracking-wider">Strong, easy-to-install fasteners for single-side access in metalworking and construction.</p>
-            <button class="btn-youtube">
-                <img src="../../assets/icons/youtube-icon.png" alt="YouTube Icon">
-                Youtube
-            </button>
         </div>
         </div>
     </section>
@@ -386,19 +386,21 @@
   
    </section>
     
-   <section class="bg-dark-blue-500 mb-6 p-4">
-    <div class="container mx-auto text-center flex flex-col items-center relative">
-        <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-0 md:w-2/3 lg:w-1/2 mb-4">
-          <img src="../../../assets/icons/cta-tool1.png" alt="Icon 1" class="w-8 h-8 md:w-16 md:h-16 self-start md:self-auto">
-          <h2 class="text-white text-sm md:text-xl font-outfit mt-2 md:mt-0 px-4">Your Trusted Partner For Quality Tools – Excel Trading Corporations!</h2>
-          <img src="../../../assets/icons/cta-tool2.png" alt="Icon 2" class="w-8 h-8 md:w-16 md:h-16 self-end md:self-auto">
-        </div>
-        <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
-        <button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
-            Contact Now
-        </button>
+<section class="bg-dark-blue-500 mb-6 p-6">
+  <div class="container mx-auto text-center flex flex-col items-center">
+    <div class="flex flex-row justify-center items-center gap-4 md:gap-6 w-full max-w-2xl mb-4">
+      <img src="../assets/icons/cta-tool1.png" alt="Icon 1" class="w-10 h-10 md:w-14 md:h-14 flex-shrink-0">
+      <h2 class="text-white text-sm md:text-xl font-outfit text-center">Build with Confidence – Invest in the Best Fasteners for Your Projects Now!!</h2>
+      <img src="../assets/icons/cta-tool2.png" alt="Icon 2" class="w-10 h-10 md:w-14 md:h-14 flex-shrink-0">
     </div>
-  </section>
+    <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
+    <a href="/contact-us">
+      <button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+        Contact Now
+      </button>
+    </a>
+  </div>
+</section>
   
   <footer class="bg-primary-orange-600 py-8">
     <div class="container mx-auto px-4 md:px-0">
@@ -424,31 +426,52 @@
            <p class="text-base">info@exceltrading.in</p>
           </div>
           <div class="flex mt-4 space-x-4 md:mt-6">
-            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-              <img src="../../../assets/icons/facebook.png" alt="Facebook Icon">
-            </div>
-            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-              <img src="../../../assets/icons/google.png" alt="Twitter Icon">
-            </div>
-            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-              <img src="../../../assets/icons/twitter.png" alt="Google Plus Icon">
-            </div>
-            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-              <img src="../../../assets/icons/linkedIn.png" alt="LinkedIn Icon">
-            </div>
+            <a href="https://in.linkedin.com/company/excel-trading-corp" target="_blank" class="bg-dark-blue-500 rounded-full w-10 h-10 flex items-center justify-center hover:bg-dark-blue-500 transition duration-300 ease-in-out">
+                  <img src="../assets/icons/linkedIn.png" alt="LinkedIn Icon">
+                </a>
           </div>
           </div>
         </div>
         <!-- Section 2 -->
         <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
-          <div class="flex flex-col items-center md:block">
+          <div class="flex flex-col items-start md:block">
             <h3 class="text-xl font-semibold font-outfit mb-4">Our Products</h3>
             <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
-              <li class="text-base mb-2">Self Drilling Screws</li>
-              <li class="text-base mb-2">Self Tapping Screws</li>
-              <li class="text-base mb-2">Blind Rivets</li>
-              <li class="text-base mb-2">Rivet Nut</li>
-              <li class="text-base mb-2 ">Anchors</li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/self-drilling-screws'>
+                Self Drilling Screws
+              </a>
+              </li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/self-tapping-screws'>
+                Self Tapping Screws
+              </a>
+              </li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/blind-rivets'>
+                Blind Rivets
+                </a>
+              </li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/rivet-nuts'>
+                Rivet Nut
+                </a>
+              </li>
+              <li class="text-base mb-2 ">
+                <a class='hover:underline hover:text-white' href='/categories/anchors'>
+                Anchors
+              </a>
+              </li>
+              <li class="text-base mb-2 ">
+                <a class='hover:underline hover:text-white' href='/categories/furniture-fasteners'>
+                  Furniture Fasteners
+                </a>
+              </li>
+              <li class="text-base mb-2 ">
+                <a class='hover:underline hover:text-white' href='/categories/riveters'>
+                  Riveters
+                </a>
+              </li>
             </ul>
           </div>
         </div>
