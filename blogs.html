@@ -1,1 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="stylesheet" href="../assets/output.css">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="apple-touch-icon" class="rounded-full" sizes="180x180" href="../assets/company/apple-touch-icon.png">
+  <link rel="icon" type="image/png" class="rounded-full" sizes="32x32" href="../assets/company/favicon-32x32.png">
+  <link rel="icon" type="image/png" class="rounded-full" sizes="16x16" href="../assets/company/favicon-16x16.png">
+  <link rel="manifest" href="../assets/company/site.webmanifest">
+  <script defer>
+    window.addEventListener('load', function() { new WOW().init(); });
+  </script>
 
+  <title>Blog | Fasteners, Clinching, Rivets & Industry Insights | Excel Trading Corporation Bangalore</title>
+  <meta name="description" content="Guides, technical insights and product announcements from Excel Trading Corporation — fasteners, self-drilling screws, clinching fasteners, rivets and battery components. Supplier in Bengaluru, India.">
+  <meta name="keywords" content="fastener blog India, self drilling screw guide Bangalore, clinching fastener India, rivet nut blog, battery holder India, Excel Trading Corporation blog, fastener technical guide India">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Excel Trading Corporation">
+  <link rel="canonical" href="https://exceltrading.in/blogs.html">
+  <meta property="og:title" content="Blog | Excel Trading Corporation Bangalore">
+  <meta property="og:description" content="Technical guides, product news and industry insights from Excel Trading Corporation — fastener supplier in Bengaluru, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://exceltrading.in/blogs.html">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Excel Trading Corporation">
+
+  <style>
+    /* ── BLOG CARD STYLES ── */
+    .blog-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      transform: translateY(-3px);
+    }
+    .blog-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .blog-card-img-placeholder {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #00396F 0%, #005fa3 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .blog-card-body {
+      padding: 1.4rem 1.5rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .blog-card-tag {
+      display: inline-block;
+      background: #fff3e0;
+      color: #f97316;
+      font-size: 0.68rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 12px;
+      border-radius: 999px;
+      border: 1px solid #fed7aa;
+      margin-bottom: 0.6rem;
+      width: fit-content;
+    }
+    .blog-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #00396F;
+      margin: 0 0 0.5rem;
+      line-height: 1.35;
+    }
+    .blog-card-date {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .blog-card-desc {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.875rem;
+      color: #4b5563;
+      line-height: 1.7;
+      flex: 1;
+      margin: 0 0 1.1rem;
+    }
+    .blog-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #00396F;
+      text-decoration: none;
+      margin-top: auto;
+      transition: gap 0.2s;
+    }
+    .blog-card-link:hover { gap: 0.55rem; color: #f97316; }
+    .blog-card-link svg { transition: transform 0.2s; }
+    .blog-card-link:hover svg { transform: translateX(3px); }
+
+    /* ── PAGINATION ── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 2.5rem 0 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .pg-btn {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+      color: #374151;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      font-family: 'Poppins', sans-serif;
+    }
+    .pg-btn:hover:not(:disabled) { background: #00396F; color: #fff; border-color: #00396F; }
+    .pg-btn.active { background: #00396F; color: #fff; border-color: #00396F; }
+    .pg-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .pg-arrow {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+      color: #00396F;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .pg-arrow:hover:not(:disabled) { background: #f97316; border-color: #f97316; color: #fff; }
+    .pg-arrow:disabled { opacity: 0.35; cursor: not-allowed; }
+    .pg-info {
+      font-size: 0.78rem;
+      color: #6b7280;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    /* ── HIDDEN ── */
+    .blog-page { display: none; }
+    .blog-page.active { display: grid; }
+  </style>
+</head>
+<body>
+
+  <!-- ── FLOATING ACTION BUTTONS ── -->
+  <div class="fixed bottom-20 right-2 space-y-2 z-50">
+    <a href="https://wa.me/+919448239476" target="_blank" class="bg-green-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out">
+      <img src="../assets/icons/whatsapp-icon.png" alt="WhatsApp Icon" class="w-6 h-6">
+    </a>
+    <a href="mailto:info@exceltrading.in" class="bg-blue-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+      <img src="../assets/icons/footer-email.png" alt="Email Icon" class="w-6 h-6">
+    </a>
+    <a href="tel:+919448239476" class="bg-orange-500 w-10 h-10 flex justify-center items-center text-white p-1 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+      <img src="../assets/icons/footer-phone.png" alt="Call Icon" class="w-6 h-6">
+    </a>
+  </div>
+  <div class="fixed bottom-4 right-2 z-50">
+    <a href="contact-us.html" class="block bg-primary-blue-500 text-white py-[6px] px-4 rounded-lg shadow-lg text-center hover:bg-primary-blue-600 transition duration-300 ease-in-out">
+      Enquire Now
+    </a>
+  </div>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="bg-dark-blue-500 px-4 py-2">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-white text-3xl font-bold font-outfit">
+        <a href='/'><img class="w-16 md:w-20 h-auto object-contain" alt="Excel Trading Corporation Logo" src="../assets/company/EXCEL-LOGO.png"/></a>
+      </div>
+      <div class="hidden md:flex space-x-8 font-roboto">
+        <a href="index.html" class="text-white text-base">Home</a>
+        <a href="about-us.html" class="text-white text-base">About Us</a>
+        <a href="blogs.html" class="text-white text-base">Blogs</a>
+        <div class="relative dropdown">
+          <a href="#" class="text-white text-base flex items-center">Products
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <div class="dropdown-menu hidden absolute bg-dark-blue-500 shadow-lg mt-1 rounded-md w-60">
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/self-drilling-screws.html" class="block px-4 py-2 text-sm text-white">Self Drilling Screws</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/self-tapping-screws.html" class="block px-4 py-2 text-sm text-white">Self Tapping Screws</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="single-products/drywall-chipboard/drywall-chipboard-screws.html" class="block px-4 py-2 text-sm text-white">Drywall Chipboard Screws</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/blind-rivets.html" class="block px-4 py-2 text-sm text-white">Blind rivets</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/rivet-nuts.html" class="block px-4 py-2 text-sm text-white">Rivet Nuts</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/anchors.html" class="block px-4 py-2 text-sm text-white">Anchors</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/riveters.html" class="block px-4 py-2 text-sm text-white">Riveters</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/clinchfasteners.html" class="block px-4 py-2 text-sm text-white">Clinching fasteners</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="categories/furniture-fasteners.html" class="block px-4 py-2 text-sm text-white">Furniture fasteners</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="single-products/bits-socket/bits-socket.html" class="block px-4 py-2 text-sm text-white">Bits Sockets</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="single-products/shear-stud/shear-stud.html" class="block px-4 py-2 text-sm text-white">Shear stud</a>
+            </div>
+            <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
+              <img class="w-5 h-5" src="../assets/icons/dropdown-bolt-icon.png"/>
+              <a href="single-products/capacitor/capacitor-discharge.html" class="block px-4 py-2 text-sm text-white">Capacitor discharge</a>
+            </div>
+          </div>
+        </div>
+        <a href="blogs.html" class="text-white text-base border-b-2 border-orange-500 pb-1">Blog</a>
+        <a href="contact-us.html" class="text-white text-base">Contact Us</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE SIDEBAR ── -->
+  <div id="sidebar" class="fixed hidden font-poppins top-0 right-0 w-[75%] z-[999] h-full bg-dark-blue-500 text-white flex flex-col items-start">
+    <img src="../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
+    <div class="w-full p-4">
+      <div class="text-lg font-bold font-poppins mb-4">Excel Trading Corporation</div>
+      <div class="h-1 w-[30%] bg-orange-500 mb-6"></div>
+      <a href="index.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+        <img src="../assets/icons/sidebar-home.png" alt="Home Icon" class="mr-4 w-5 h-5">Home
+      </a>
+      <a href="about-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+        <img src="../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">About Us
+      </a>
+            <a href="blogs.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+             Blogs
+      </a>
+      <div class="flex justify-between items-center mb-4 w-full border-b border-b-white pb-2 cursor-pointer" onclick="toggleDropdown()">
+        <div class="flex items-center">
+          <img src="../assets/icons/sidebar-toolbox.png" alt="Products Icon" class="mr-4 w-5 h-5">Products
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" id="dropdownIcon" class="mr-4 w-5 h-5" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M12 16a1 1 0 01-.707-.293l-5-5a1 1 0 011.414-1.414L12 13.586l4.293-4.293a1 1 0 011.414 1.414l-5 5A1 1 0 0112 16z" clip-rule="evenodd"/>
+        </svg>
+      </div>
+      <div class="hidden overflow-y-auto custom-scrollbar" id="dropdownMenu" style="max-height: 165px;">
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/self-drilling-screws.html" class="block pl-10 py-2 text-sm">Self Drilling Screws</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/self-tapping-screws.html" class="block pl-10 py-2 text-sm">Self Tapping Screws</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="single-products/drywall-chipboard/drywall-chipboard-screws.html" class="block pl-10 py-2 text-sm">Drywall Chipboard Screws</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/blind-rivets.html" class="block pl-10 py-2 text-sm">Blind Rivets</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/rivet-nuts.html" class="block pl-10 py-2 text-sm">Rivet Nut</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/anchors.html" class="block pl-10 py-2 text-sm">Anchors</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/riveters.html" class="block pl-10 py-2 text-sm">Riveters</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/clinchfasteners.html" class="block pl-10 py-2 text-sm">Clinching Fasteners</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="categories/furniture-fasteners.html" class="block pl-10 py-2 text-sm">Furniture Fasteners</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="single-products/bits-socket/bits-socket.html" class="block pl-10 py-2 text-sm">Bits Sockets</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="single-products/shear-stud/shear-stud.html" class="block pl-10 py-2 text-sm">Shear stud</a></li>
+        <li class="flex items-center ml-5 mb-2 gap-x-2"><img src="../assets/icons/single-nut-bolt.png" alt="" class="mr-2 w-4 h-4"><a href="single-products/capacitor/capacitor-discharge.html" class="block pl-10 py-2 text-sm">Capacitor discharge</a></li>
+      </div>
+      <a href="blogs.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+        <img src="../assets/icons/sidebar-home.png" alt="Blog Icon" class="mr-4 w-5 h-5">Blog
+      </a>
+      <a href="contact-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
+        <img src="../assets/icons/sidebar-phone.png" alt="Contact Us Icon" class="mr-4 w-5 h-5">Contact Us
+      </a>
+      <div class="mt-20 absolute bottom-10 left-0">
+        <div class="flex items-center gap-x-2 w-full my-4">
+          <img src="../assets/icons/footer-location.png" class="w-5 h-5">
+          <p class="text-xs underline text-white font-poppins">163, 1. Sadar Patrappa Rd Madrapet, Kumbarpet, Dodpete, Nagarathpete, Bengaluru - 560002</p>
+        </div>
+        <div class="flex items-center gap-x-2 w-full my-4">
+          <img src="../assets/icons/footer-phone.png" class="w-5 h-5">
+          <p class="text-xs text-white underline font-poppins">+91-9448239476 / +91-9148001965</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HERO BANNER ── -->
+  <section class="contact-section h-36 md:h-48 flex justify-center items-center">
+    <div class="overlay"></div>
+    <div class="content text-white ml-6">
+      <div class="text-box text-center text-white font-roboto">
+        <h1 class="text-lg md:text-2xl font-bold">Blog &amp; Technical Guides</h1>
+        <p class="text-sm md:text-base tracking-wider mt-2">Product Insights · Installation Guides · Industry News · New Arrivals</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAIN BLOG SECTION ── -->
+  <section class="py-12 px-6 md:px-16 bg-primary-gray-100 min-h-screen">
+    <div class="container mx-auto">
+
+      <!-- Section heading -->
+      <div class="mb-8 wow animate__animated animate__fadeInUp">
+        <h2 class="text-2xl md:text-3xl font-outfit font-bold text-[#00396F] mb-2">Latest Articles</h2>
+        <div class="h-1 w-16 bg-orange-500 rounded mb-1"></div>
+        <p class="text-sm font-roboto text-gray-500 mt-3" id="page-info">Showing posts 1–5</p>
+      </div>
+
+      <!-- ══ PAGE 1 ══ -->
+      <div class="blog-page active grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="page-1">
+
+        <!-- Card 1 -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0s">
+          <img src="../assets/blog/lithium-cell-holder.png" alt="Lithium Battery Cell Holders" class="blog-card-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="blog-card-img-placeholder" style="display:none;">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">New Product</span>
+            <h3 class="blog-card-title">Lithium Battery Cell Holders — 18650, 21700, 26650, 32700 &amp; Prismatic Now Available</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              1 July 2025
+            </p>
+            <p class="blog-card-desc">Excel Trading Corporation now supplies UL94 V-0 flame-retardant cell holders for all major cylindrical and prismatic lithium formats. Essential for EV packs, solar storage, telecom backup and electronics manufacturing across India.</p>
+            <a href="blog/lithium-battery-cell-holders.html" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 — Placeholder: replace with your next blog -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+          <div class="blog-card-img-placeholder">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Technical Guide</span>
+            <h3 class="blog-card-title">How to Choose the Right Self-Drilling Screw for HVAC Ductwork</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              15 June 2025
+            </p>
+            <p class="blog-card-desc">Pan head vs hex head, Drill Point #2 vs #3 — a practical guide to selecting the right DIN 7504 self-drilling screw for HVAC duct assembly, skin sheet connections and light gauge steel framing in India.</p>
+            <a href="#" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 — Placeholder -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+          <div class="blog-card-img-placeholder">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Technical Guide</span>
+            <h3 class="blog-card-title">Self-Clinching Fasteners — FH, FHS and When to Use Each</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2 June 2025
+            </p>
+            <p class="blog-card-desc">A complete guide to self-clinching stud types — carbon steel FH for electronics enclosures and control panels, stainless FHS for humid and outdoor applications, and FH4 for stainless host panels. With sheet thickness and hole size guidance.</p>
+            <a href="#" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 — Placeholder -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+          <div class="blog-card-img-placeholder">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Industry News</span>
+            <h3 class="blog-card-title">Blind Rivets vs Rivet Nuts — Which Do You Need?</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              20 May 2025
+            </p>
+            <p class="blog-card-desc">Confused between a blind rivet and a rivet nut? This guide explains the difference — when to use a standard open-end rivet for permanent joining, and when a rivet nut gives you the reusable threaded insert you actually need.</p>
+            <a href="#" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5 — Placeholder -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+          <div class="blog-card-img-placeholder">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Technical Guide</span>
+            <h3 class="blog-card-title">Anchor Bolt Selection Guide for Concrete and Masonry in India</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              5 May 2025
+            </p>
+            <p class="blog-card-desc">Wedge anchors, sleeve anchors, drop-in anchors and chemical anchors — a practical selection guide for construction, MEP and structural applications across India, with load rating and base material guidance.</p>
+            <a href="#" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /page-1 -->
+
+      <!-- ══ PAGE 2 ══ -->
+      <div class="blog-page grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="page-2">
+
+        <!-- Card 6 — Placeholder -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0s">
+          <div class="blog-card-img-placeholder">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Product Guide</span>
+            <h3 class="blog-card-title">Drywall Screws vs Chipboard Screws — Understanding the Difference</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              18 April 2025
+            </p>
+            <p class="blog-card-desc">Drywall screws and chipboard screws look similar but are designed for different substrates and load conditions. This guide covers thread geometry, point type, coating and application — so you pick the right screw every time.</p>
+            <a href="#" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 7 — Placeholder -->
+        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+          <div class="blog-card-img-placeholder">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">New Product</span>
+            <h3 class="blog-card-title">Furniture Fasteners — Cam Locks, Dowels and Connector Bolts Now in Stock</h3>
+            <p class="blog-card-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              1 April 2025
+            </p>
+            <p class="blog-card-desc">Our furniture fastener range now includes cam lock nuts, dowel pins, connector bolts and shelf supports for flat-pack and RTA furniture manufacturers in India. Available in bulk quantities from our Bengaluru warehouse.</p>
+            <a href="#" class="blog-card-link">
+              Read Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Add more cards here as you publish more blogs -->
+
+      </div><!-- /page-2 -->
+
+      <!-- ══ PAGINATION ══ -->
+      <div class="pagination mt-10" id="pagination">
+        <button class="pg-arrow" id="prev-btn" onclick="changePage(-1)" disabled aria-label="Previous page">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="pg-btn active" id="pg-1" onclick="goToPage(1)">1</button>
+        <button class="pg-btn" id="pg-2" onclick="goToPage(2)">2</button>
+        <button class="pg-arrow" id="next-btn" onclick="changePage(1)" aria-label="Next page">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <p class="pg-info" id="page-info-bottom">Page 1 of 2</p>
+
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ── -->
+  <section class="bg-dark-blue-500 mb-6 p-4">
+    <div class="container mx-auto text-center flex flex-col items-center relative">
+      <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-0 md:w-2/3 lg:w-1/2 mb-4">
+        <img src="../assets/icons/cta-tool1.png" alt="Icon 1" class="w-8 h-8 md:w-16 md:h-16 self-start md:self-auto">
+        <h2 class="text-white text-sm md:text-xl font-outfit mt-2 md:mt-0 px-4">Build with Confidence – Invest in the Best Fasteners for Your Projects Now!!</h2>
+        <img src="../assets/icons/cta-tool2.png" alt="Icon 2" class="w-8 h-8 md:w-16 md:h-16 self-end md:self-auto">
+      </div>
+      <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
+      <a href="contact-us.html"><button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+        Contact Now
+      </button></a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="bg-primary-orange-600 py-8">
+    <div class="container mx-auto px-4 md:px-0">
+      <div class="flex flex-wrap justify-between text-white">
+        <!-- Section 1 -->
+        <div class="w-full md:w-1/4 mb-8 md:mb-0">
+          <div class="flex flex-col items-start md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Excel Trading Corporation</h3>
+            <div class="flex items-start my-4">
+              <img src="../assets/icons/footer-location.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+              <p class="text-base">163, 1. Sadar Patrappa Rd Madrapet, <br>Kumbarpet, Dodpete, Nagarathpete, <br>Bengaluru - 560002</p>
+            </div>
+            <div class="flex items-start my-2 md:my-4">
+              <img src="../assets/icons/footer-phone.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+              <p class="text-base">+919448239476 / +919148001965</p>
+            </div>
+            <div class="flex items-start my-2 md:my-4">
+              <img src="../assets/icons/footer-email.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+              <p class="text-base">info@exceltrading.in</p>
+            </div>
+            <div class="flex mt-4 space-x-4 md:mt-6">
+              <a href="https://in.linkedin.com/company/excel-trading-corp" target="_blank" class="bg-dark-blue-500 rounded-full w-10 h-10 flex items-center justify-center transition duration-300 ease-in-out">
+                <img src="../assets/icons/linkedIn.png" alt="LinkedIn Icon" class="w-5 h-5">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Section 2 -->
+        <div class="w-full md:w-1/4 mb-8 md:mb-0 md:flex justify-center">
+          <div class="flex flex-col items-start md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Our Products</h3>
+            <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/self-drilling-screws'>Self Drilling Screws</a></li>
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/self-tapping-screws'>Self Tapping Screws</a></li>
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/blind-rivets'>Blind Rivets</a></li>
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/rivet-nuts'>Rivet Nut</a></li>
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/anchors'>Anchors</a></li>
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/furniture-fasteners'>Furniture Fasteners</a></li>
+              <li class="text-base mb-2"><a class='hover:underline hover:text-white' href='/categories/riveters'>Riveters</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section 3 -->
+        <div class="w-full md:w-1/4 mb-8 md:mb-0 md:flex justify-center">
+          <div class="flex flex-col items-start md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Our Information</h3>
+            <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+              <li class="text-base mb-2">About us</li>
+              <li class="text-base mb-2">Our Policy</li>
+              <li class="text-base mb-2">Working Days</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section 4 -->
+        <div class="w-full md:w-1/4">
+          <h3 class="text-lg font-semibold font-outfit mb-4">Locate Us Here</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.105313629579!2d77.57725927381014!3d12.965112415023084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e188f8f01f%3A0xf166954560acacda!2sExcel%20Trading%20Corporation!5e0!3m2!1sen!2sin!4v1723037321158!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[200px] max-w-full"></iframe>
+        </div>
+      </div>
+      <div class="w-[80%] h-[2px] bg-primary-gray-300 mx-auto mt-8 mb-4"></div>
+    </div>
+    <p class="text-center text-sm md:text-base text-white tracking-wide font-poppins mt-2 mb-4">
+      © 2024 Developed by Hamza Mustafa. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="../assets/scripts/index.js"></script>
+  <script src="../assets/scripts/products.js"></script>
+
+  <script>
+    // ── PAGINATION LOGIC ──
+    const POSTS_PER_PAGE = 5;
+    const totalPages = document.querySelectorAll('.blog-page').length;
+    let currentPage = 1;
+
+    // Page info labels — update these when you add more blogs
+    const pageLabels = {
+      1: 'Showing posts 1–5',
+      2: 'Showing posts 6–7'
+    };
+
+    function goToPage(page) {
+      if (page < 1 || page > totalPages) return;
+
+      // Hide all pages
+      document.querySelectorAll('.blog-page').forEach(p => p.classList.remove('active'));
+      // Show target page
+      document.getElementById('page-' + page).classList.add('active');
+
+      // Update page number buttons
+      document.querySelectorAll('.pg-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('pg-' + page).classList.add('active');
+
+      // Update arrow states
+      document.getElementById('prev-btn').disabled = (page === 1);
+      document.getElementById('next-btn').disabled = (page === totalPages);
+
+      // Update info text
+      const label = pageLabels[page] || ('Page ' + page);
+      document.getElementById('page-info').textContent = label;
+      document.getElementById('page-info-bottom').textContent = 'Page ' + page + ' of ' + totalPages;
+
+      currentPage = page;
+
+      // Scroll smoothly to top of blog section
+      document.querySelector('section.bg-primary-gray-100').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function changePage(direction) {
+      goToPage(currentPage + direction);
+    }
+
+    // ── ADDING A NEW BLOG ──
+    // 1. Add a new <div class="blog-card"> inside the correct <div class="blog-page"> (page-1 through page-N)
+    // 2. When page-1 has 5 cards, start adding to page-2. When page-2 has 5, create page-3, etc.
+    // 3. Add a new pagination button: <button class="pg-btn" id="pg-3" onclick="goToPage(3)">3</button>
+    // 4. Update the pageLabels object above with the correct label for the new page.
+    // 5. Update pageLabels for the previous last page if its count changed.
+  </script>
+
+</body>
+</html>
