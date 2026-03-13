@@ -478,10 +478,10 @@
     <div class="container mx-auto">
       <h2 class="text-2xl font-semibold font-outfit mb-2 text-[#00396F]">Available Sizes</h2>
       <div class="h-1 w-[6%] bg-orange-500 mb-3"></div>
-      <p class="text-sm md:text-base font-roboto text-gray-600 mb-8 max-w-3xl">Standard Anlock-In Bolt sizes stocked at our Bengaluru store. Grip range is the total material stack thickness the rivet will correctly clamp — select a rivet whose grip range covers your combined sheet thickness. Drill the hole to the exact diameter below; do not use a larger bit.</p>
+      <p class="text-sm md:text-base font-roboto text-gray-600 mb-4 max-w-3xl">Standard Anlock-In Bolt sizes stocked at our Bengaluru store. Grip range is the total material stack thickness the rivet will correctly clamp — select a rivet whose grip range covers your combined sheet thickness. Drill the hole to the exact diameter below; do not use a larger bit.</p>
       <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 10px 25px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.9); padding: 4px; background: white;">
-      <div class="overflow-x-auto" style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 10px 25px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.9);">
-        <table class="min-w-full" style="border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden;">
+      <div class="overflow-x-auto" style="border-radius: 10px;">
+      <table class="min-w-full" style="border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden;">
           <thead>
             <tr style="background-color: #00396F; color: white;">
               <th class="px-6 py-4 text-left text-sm font-semibold font-roboto" style="border-right: 1px solid rgba(255,255,255,0.2); border-bottom: 2px solid rgba(255,255,255,0.3);">Rivet Diameter</th>
@@ -524,6 +524,7 @@
         </table>
       </div>
     </div>
+    </div>
   </section>
 
 
@@ -531,34 +532,41 @@
   <section class="py-14 px-6 md:px-16 bg-white">
     <div class="container mx-auto">
 
-      <h2 class="text-2xl md:text-3xl font-bold font-outfit mb-2 text-[#00396F]">Technical Guide</h2>
+      <h2 class="text-2xl md:text-3xl font-bold font-outfit mb-2 mt-15 text-[#00396F]">Technical Guide</h2>
       <div class="h-1 w-[8%] bg-orange-500 mb-10"></div>
 
       <!-- 3 material variant cards -->
-      <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-6">Material Options</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        <div class="bg-gray-50 rounded-xl p-7 border border-gray-200" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <div class="h-1 w-10 rounded mb-5" style="background-color: #00396F;"></div>
-          <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Steel — Zinc Plated</h3>
-          <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">Standard Structural Grade</p>
-          <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-5">Highest shear and tensile strength of all three materials. Zinc plating provides corrosion protection in indoor and semi-exposed conditions. The standard choice wherever maximum mechanical performance matters — truck chassis, container fabrication, construction steel framing and heavy automotive assemblies.</p>
-          <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Truck building &middot; Containers &middot; Construction &middot; Structural steel</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-7 border border-gray-200" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <div class="h-1 w-10 rounded mb-5 bg-orange-500"></div>
-          <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Stainless Steel</h3>
-          <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">300-Series &middot; Passivated</p>
-          <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-5">Fully corrosion resistant in outdoor, marine and coastal environments. Retains the locked mandrel performance in wet and salt-spray conditions. Slightly lower shear strength than steel but far superior long-term durability outdoors. Passivated finish compatible with food-grade and hygienic panels.</p>
-          <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Outdoor equipment &middot; Coastal structures &middot; Food processing &middot; Marine</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-7 border border-gray-200" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <div class="h-1 w-10 rounded mb-5 bg-gray-400"></div>
-          <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Aluminium</h3>
-          <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">5000-Series Alloy &middot; Non-Magnetic</p>
-          <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-5">Significantly lighter than steel — the best option where weight reduction is a design priority. Non-magnetic and galvanically compatible with aluminium host panels. Used in vehicle bodywork, lightweight structural frames and aerospace brackets. All the benefits of the locking mandrel design at lower weight.</p>
-          <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Automotive body panels &middot; Lightweight vehicles &middot; Aluminium fabrication</p>
-        </div>
-      </div>
+<h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-4">Material Options</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+
+  <!-- Card 1 -->
+  <div class="bg-gray-50 rounded-xl p-7 border border-gray-200 flex flex-col" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-10 rounded mb-5 bg-[#00396F]"></div>
+    <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Steel — Zinc Plated</h3>
+    <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">Standard Structural Grade</p>
+    <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-5 flex-1">Highest shear and tensile strength of all three materials. Zinc plating provides corrosion protection in indoor and semi-exposed conditions. The standard choice wherever maximum mechanical performance matters — truck chassis, container fabrication, construction steel framing and heavy automotive assemblies.</p>
+    <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Truck building &middot; Containers &middot; Construction &middot; Structural steel</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-gray-50 rounded-xl p-7 border border-gray-200 flex flex-col" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-10 rounded mb-5 bg-orange-500"></div>
+    <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Stainless Steel</h3>
+    <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">300-Series &middot; Passivated</p>
+    <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-5 flex-1">Fully corrosion resistant in outdoor, marine and coastal environments. Retains the locked mandrel performance in wet and salt-spray conditions. Slightly lower shear strength than steel but far superior long-term durability outdoors. Passivated finish compatible with food-grade and hygienic panels.</p>
+    <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Outdoor equipment &middot; Coastal structures &middot; Food processing &middot; Marine</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-gray-50 rounded-xl p-7 border border-gray-200 flex flex-col" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-10 rounded mb-5 bg-gray-400"></div>
+    <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Aluminium</h3>
+    <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">5000-Series Alloy &middot; Non-Magnetic</p>
+    <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-5 flex-1">Significantly lighter than steel — the best option where weight reduction is a design priority. Non-magnetic and galvanically compatible with aluminium host panels. Used in vehicle bodywork, lightweight structural frames and aerospace brackets. All the benefits of the locking mandrel design at lower weight.</p>
+    <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Automotive body panels &middot; Lightweight vehicles &middot; Aluminium fabrication</p>
+  </div>
+
+</div>
 
 
       <!-- Anlock vs Standard comparison table -->
@@ -677,10 +685,10 @@
 
       <!-- Grip range callout -->
       <div class="mb-16">
-        <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-4 mt-20">Grip Range — Selection Guide</h3>
-        <p class="text-sm md:text-base font-roboto text-gray-700 leading-relaxed mb-5">The grip range is the most important selection variable when specifying a blind rivet. Choosing a rivet with the wrong grip range results in either an overformed blind tail (grip too short — the rivet is crushed before it fully expands) or an underformed tail (grip too long — the rivet body never reaches its full expansion diameter). Both failures dramatically reduce joint strength.</p>
+        <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-1 mt-20">Grip Range — Selection Guide</h3>
+        <p class="text-sm md:text-base font-roboto text-gray-700 leading-relaxed mb-4">The grip range is the most important selection variable when specifying a blind rivet. Choosing a rivet with the wrong grip range results in either an overformed blind tail (grip too short — the rivet is crushed before it fully expands) or an underformed tail (grip too long — the rivet body never reaches its full expansion diameter). Both failures dramatically reduce joint strength.</p>
         <div class="bg-blue-50 border-l-4 border-[#00396F] rounded-r-xl p-7">
-          <p class="text-sm font-semibold font-roboto text-[#00396F] mb-4">Three rules for correct Anlock-In Bolt selection</p>
+          <p class="text-sm font-semibold font-roboto text-[#00396F] mb-1">Three rules for correct Anlock-In Bolt selection</p>
           <ul class="space-y-4 font-roboto text-sm text-gray-700">
             <li class="flex items-start gap-4">
               <span class="mt-1 w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold" style="background-color: #00396F;">1</span>
