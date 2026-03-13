@@ -39,18 +39,19 @@
       Enquire Now
     </a>
    </div>
-   <nav class="bg-primary-blue-500 p-4">
+   <nav class="bg-dark-blue-500 p-4">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-white text-3xl font-bold font-outfit">
-        <a href="../../index.html"><img class="w-16 md:w-20" alt="ETC" src="../../../assets/company/excel_trading_logo.PNG"/></a>
+        <a href='/'><img class="w-16 md:w-20 h-auto object-contain" alt="Excel Trading Corporation Logo" src="../../../assets/company/EXCEL-LOGO.png"/></a>
       </div>
       <div class="hidden md:flex space-x-8 font-roboto">
         <a href="../../index.html" class="text-white text-base">Home</a>
         <a href="../../about-us.html" class="text-white text-base">About Us</a>
+        <a class='text-white text-base' href='/blogs'>Blogs</a>
         <div class="relative dropdown">
           <a href="#" class="text-white text-base flex items-center">Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
           <!-- Dropdown Menu -->
-          <div class="dropdown-menu hidden absolute bg-[#004d99] shadow-lg mt-1 rounded-md w-60">
+          <div class="dropdown-menu hidden absolute bg-dark-blue-500 shadow-lg mt-1 rounded-md w-60">
             <div class="flex items-center py-1 px-2 gap-x-1 hover:bg-primary-orange-400">
               <img class="w-5 h-5" src="../../../assets/icons/dropdown-bolt-icon.png"/>
               <a href="../../categories/self-drilling-screws.html" class="block px-4 py-2 text-sm">Self Drilling Screws</a>
@@ -114,7 +115,7 @@
   </nav>
   
       <!-- Sidebar for mobile view -->
-      <div id="sidebar" class="fixed hidden font-poppins top-0 right-0 w-[75%] z-[999] h-full bg-[#0073E6] text-white flex flex-col items-start">
+      <div id="sidebar" class="fixed hidden font-poppins top-0 right-0 w-[75%] z-[999] h-full bg-dark-blue-500 text-white flex flex-col items-start">
         <img src="../../../assets/icons/sidebar-cross.png" class="w-5 h-5 absolute top-4 right-4 cursor-pointer" id="close-btn"/>
         <div class="w-full p-4">
             <div class="text-lg font-bold font-poppins mb-4">Excel Trading Corporation</div>
@@ -126,6 +127,9 @@
             <a href="../../about-us.html" class="flex items-center mb-4 w-full border-b border-b-white pb-2">
                 <img src="../../../assets/icons/sidebar-people.png" alt="About Us Icon" class="mr-4 w-5 h-5">
                 About Us
+            </a>
+           <a class='flex items-center mb-4 w-full border-b border-b-white pb-2' href='/blogs'>
+             Blogs
             </a>
             <div class="flex justify-between items-center mb-4 w-full border-b border-b-white pb-2 cursor-pointer" onclick="toggleDropdown()">
                 <div class="flex items-center">
@@ -218,7 +222,7 @@
               </div>
               <div class="flex items-center gap-x-2 w-full my-4">
                 <img src="../../../assets/icons/footer-phone.png" class="w-5 h-5">
-                <p class="text-xs text-white underline font-poppins">+91-9448239476/+91-9844049390</p>
+                <p class="text-xs text-white underline font-poppins">+91-9448239476/+91-9148001965</p>
               </div>
             </div>
         </div>
@@ -313,97 +317,122 @@
       </section>
 
       
-      <section class="bg-dark-blue-500 mb-6 p-4">
-        <div class="container mx-auto text-center flex flex-col items-center relative">
-            <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-0 md:w-2/3 lg:w-1/2 mb-4">
-              <img src="../../../assets/icons/cta-tool1.png" alt="Icon 1" class="w-8 h-8 md:w-16 md:h-16 self-start md:self-auto">
-              <h2 class="text-white text-sm md:text-xl font-outfit mt-2 md:mt-0 px-4">Build with Confidence – Invest in the Best Tools for Your Projects Now!!</h2>
-              <img src="../../../assets/icons/cta-tool2.png" alt="Icon 2" class="w-8 h-8 md:w-16 md:h-16 self-end md:self-auto">
-            </div>
-            <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
-            <a href="tel:+919448239476"><button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
-              Contact Now
-            </button></a>
-        </div>
-    </section>
+<section class="bg-dark-blue-500 mb-6 p-6">
+  <div class="container mx-auto text-center flex flex-col items-center">
+    <div class="flex flex-row justify-center items-center gap-4 md:gap-6 w-full max-w-2xl mb-4">
+      <img src="../assets/icons/cta-tool1.png" alt="Icon 1" class="w-10 h-10 md:w-14 md:h-14 flex-shrink-0">
+      <h2 class="text-white text-sm md:text-xl font-outfit text-center">Build with Confidence – Invest in the Best Fasteners for Your Projects Now!!</h2>
+      <img src="../assets/icons/cta-tool2.png" alt="Icon 2" class="w-10 h-10 md:w-14 md:h-14 flex-shrink-0">
+    </div>
+    <div class="w-[80%] mx-auto bg-primary-gray-100 h-[2px]"></div>
+    <a href="/contact-us">
+      <button class="bg-primary-orange-500 mt-4 text-white py-2 px-10 rounded-full font-roboto text-lg hover:bg-orange-600 transition duration-300 ease-in-out">
+        Contact Now
+      </button>
+    </a>
+  </div>
+</section>
 
       <footer class="bg-primary-orange-600 py-8">
         <div class="container mx-auto px-4 md:px-0">
           <div class="flex flex-wrap justify-between text-white">
-            <!-- Section 1 -->
-            <div class="w-full md:w-1/4 mb-8 md:mb-0">
-              <div class="flex flex-col items-center md:block">
-              <h3 class="text-xl font-semibold font-outfit mb-4">Excel Trading Corporation</h3>
-              <div class="flex items-start my-4">
-               <img src="../../../assets/icons/footer-location.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
-              <p class="text-base">
-                163, 1. Sadar Patrappa Rd Madrapet, <br>
-                Kumbarpet, Dodpete, Nagarathpete, <br>
-                Bengaluru - 560002
-              </p>
-              </div>
-            <div class="flex items-start my-2  md:my-4">
-              <img src="../../../assets/icons/footer-phone.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
-              <p class="text-base">+919448239476/+919844049390</p>
-            </div>
-              <div class="flex items-start my-2 md:my-4">
-                <img src="../../../assets/icons/footer-email.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
-               <p class="text-base">info@exceltrading.in</p>
-              </div>
-              <div class="flex mt-4 space-x-4 md:mt-6">
-                <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-                  <img src="../../../assets/icons/facebook.png" alt="Facebook Icon">
-                </div>
-                <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-                  <img src="../../../assets/icons/google.png" alt="Twitter Icon">
-                </div>
-                <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-                  <img src="../../../assets/icons/twitter.png" alt="Google Plus Icon">
-                </div>
-                <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center">
-                  <img src="../../../assets/icons/linkedIn.png" alt="LinkedIn Icon">
-                </div>
-              </div>
-              </div>
-            </div>
-            <!-- Section 2 -->
-            <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
-              <div class="flex flex-col items-center md:block">
-                <h3 class="text-xl font-semibold font-outfit mb-4">Our Products</h3>
-                <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
-                  <li class="text-base mb-2">Self Drilling Screws</li>
-                  <li class="text-base mb-2">Self Tapping Screws</li>
-                  <li class="text-base mb-2">Blind Rivets</li>
-                  <li class="text-base mb-2">Rivet Nut</li>
-                  <li class="text-base mb-2 ">Anchors</li>
-                </ul>
-              </div>
-            </div>
-            <!-- Section 3 -->
-            <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
-              <div class="flex flex-col items-center md:block">
-                <h3 class="text-xl font-semibold font-outfit mb-4">Our Information</h3>
-                <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
-                  <li class="text-base mb-2">About us</li>
-                  <li class="text-base mb-2">Our Policy</li>
-                  <li class="text-base mb-2">Working Days</li>
-                </ul>
-              </div>
-            </div>
-            <!-- Section 4 -->
-            <div class="w-full md:w-1/4">
-              <h3 class="text-lg font-semibold font-outfit mb-4">Locate Us Here</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.105313629579!2d77.57725927381014!3d12.965112415023084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e188f8f01f%3A0xf166954560acacda!2sExcel%20Trading%20Corporation!5e0!3m2!1sen!2sin!4v1723037321158!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full md:w-[400px] h-[200px]"></iframe>
-            </div>
+        <!-- Section 1 -->
+        <div class="w-full md:w-1/4 mb-8 md:mb-0">
+          <div class="flex flex-col items-start md:block">
+          <h3 class="text-xl font-semibold font-outfit mb-4">Excel Trading Corporation</h3>
+          <div class="flex items-start my-4">
+           <img src="../assets/icons/footer-location.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+          <p class="text-base">
+            163, 1. Sadar Patrappa Rd Madrapet, <br>
+            Kumbarpet, Dodpete, Nagarathpete, <br>
+            Bengaluru - 560002
+          </p>
           </div>
-    
-          <div class="w-[80%] h-[2px] bg-primary-gray-300 mx-auto mt-8 mb-4"></div>
+        <div class="flex items-start my-2  md:my-4">
+          <img src="../assets/icons/footer-phone.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+          <p class="text-base">+919448239476/+919148001965</p>
         </div>
-      <p class="text-center text-sm md:text-base text-white tracking-wide font-poppins mt-2 mb-4">
-        © 2024 Developed by Hamza Mustafa. All rights reserved.
-      </p>
-      </footer>
-    <script src="../../../assets/scripts/index.js"></script>
-    <script src="../../../assets/scripts/products.js"></script>
+          <div class="flex items-start my-2 md:my-4">
+            <img src="../assets/icons/footer-email.png" class="w-[20px] h-[20px] mr-2 mt-1"/>
+           <p class="text-base">info@exceltrading.in</p>
+          </div>
+          <div class="flex mt-4 space-x-4 md:mt-6">
+                <a href="https://in.linkedin.com/company/excel-trading-corp" target="_blank" class="bg-dark-blue-500 rounded-full w-10 h-10 flex items-center justify-center hover:bg-dark-blue-500 transition duration-300 ease-in-out">
+                  <img src="../assets/icons/linkedIn.png" alt="LinkedIn Icon">
+                </a>
+          </div>
+          </div>
+        </div>
+<!-- Section 2 -->
+        <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
+          <div class="flex flex-col items-start md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Our Products</h3>
+            <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/self-drilling-screws'>
+                Self Drilling Screws
+              </a>
+              </li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/self-tapping-screws'>
+                Self Tapping Screws
+              </a>
+              </li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/blind-rivets'>
+                Blind Rivets
+                </a>
+              </li>
+              <li class="text-base mb-2">
+                <a class='hover:underline hover:text-white' href='/categories/rivet-nuts'>
+                Rivet Nut
+                </a>
+              </li>
+              <li class="text-base mb-2 ">
+                <a class='hover:underline hover:text-white' href='/categories/anchors'>
+                Anchors
+              </a>
+              </li>
+              <li class="text-base mb-2 ">
+                <a class='hover:underline hover:text-white' href='/categories/furniture-fasteners'>
+                  Furniture Fasteners
+                </a>
+              </li>
+              <li class="text-base mb-2 ">
+                <a class='hover:underline hover:text-white' href='/categories/riveters'>
+                  Riveters
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section 3 -->
+        <div class="w-full md:w-1/4  mb-8 md:mb-0 md:flex justify-center">
+          <div class="flex flex-col items-start md:block">
+            <h3 class="text-xl font-semibold font-outfit mb-4">Our Information</h3>
+            <ul class="list-disc font-medium tracking-wide text-primary-gray-100">
+              <li class="text-base mb-2">About us</li>
+              <li class="text-base mb-2">Our Policy</li>
+              <li class="text-base mb-2">Working Days</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section 4 -->
+        <div class="w-full md:w-1/4">
+          <h3 class="text-lg font-semibold font-outfit mb-4">Locate Us Here</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.105313629579!2d77.57725927381014!3d12.965112415023084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e188f8f01f%3A0xf166954560acacda!2sExcel%20Trading%20Corporation!5e0!3m2!1sen!2sin!4v1723037321158!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full md:w-[400px] h-[200px]"></iframe>
+        </div>
+      </div>
+
+      <div class="w-[80%] h-[2px] bg-primary-gray-300 mx-auto mt-8 mb-4"></div>
+    </div>
+  <p class="text-center text-sm md:text-base text-white tracking-wide font-poppins mt-2 mb-4">
+    © 2024 Developed by Hamza Mustafa. All rights reserved.
+  </p>
+  </footer>
+
+    
+    <script src="../assets/scripts/index.js"></script>
 </body>
+</html>
 </html>
