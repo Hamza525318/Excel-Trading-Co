@@ -351,7 +351,7 @@
   <div class="container mx-auto">
     <h2 class="text-2xl font-semibold font-outfit mb-2 text-[#00396F]">Available Sizes</h2>
     <div class="h-1 w-[6%] bg-orange-500 mb-3"></div>
-    <p class="text-sm md:text-base font-roboto text-gray-600 mb-8 max-w-3xl">Peel blind rivets are available in steel and aluminium across three body diameters. The 4.8 mm size offers an exceptionally wide grip range — up to 33 mm — making it one of the most versatile blind rivets for thick or variable stack assemblies. Always select a rivet length whose grip range covers your total material stack thickness.</p>
+    <p class="text-sm md:text-base font-roboto text-gray-600 mb-4 max-w-3xl">Peel blind rivets are available in steel and aluminium across three body diameters. The 4.8 mm size offers an exceptionally wide grip range — up to 33 mm — making it one of the most versatile blind rivets for thick or variable stack assemblies. Always select a rivet length whose grip range covers your total material stack thickness.</p>
     <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 10px 25px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.9); padding: 4px; background: white;">
       <div class="overflow-x-auto" style="border-radius: 10px;">
         <table class="min-w-full" style="border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden;">
@@ -397,76 +397,128 @@
 <section class="py-14 px-6 md:px-16 bg-white">
   <div class="container mx-auto">
 
-    <h2 class="text-2xl font-semibold font-outfit mt-20 text-[#00396F]">What Is a Peel Blind Rivet?</h2>
-    <div class="h-1 w-[8%] bg-orange-500 mb-6"></div>
-    <p class="text-sm md:text-base font-roboto text-gray-700 leading-relaxed mb-10 max-w-3xl">A peel blind rivet — also known as a four-petal rivet or rose rivet — has a blind end that is pre-scored with four longitudinal slits. When the mandrel is pulled during installation, these slits cause the blind tip to split open and fold back into four evenly spaced petals, forming a wide flower-like bearing head on the blind face. This petal head is significantly larger than a standard dome or even a bulb tite head, distributing the clamping load over a very wide area. The result is exceptional pull-out resistance on soft, brittle and low-density materials where any other rivet type would crack the panel or pull through.</p>
+    <h2 class="text-2xl font-semibold font-outfit mb-2 mt-20 text-[#00396F]">What Is a Peel Blind Rivet?</h2>
+    <div class="h-1 w-[8%] bg-orange-500 mb-2"></div>
+    <p class="text-sm md:text-base font-roboto text-gray-700 leading-relaxed mb-4 max-w-3xl">A peel blind rivet — also known as a four-petal rivet or rose rivet — has a blind end that is pre-scored with four longitudinal slits. When the mandrel is pulled during installation, these slits cause the blind tip to split open and fold back into four evenly spaced petals, forming a wide flower-like bearing head on the blind face. This petal head is significantly larger than a standard dome or even a bulb tite head, distributing the clamping load over a very wide area. The result is exceptional pull-out resistance on soft, brittle and low-density materials where any other rivet type would crack the panel or pull through.</p>
 
     <!-- 3D Flip Cards — How it looks Before vs After -->
-    <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-4">The Peel Action — Before &amp; After Setting</h3>
-    <div class="h-1 w-[6%] bg-orange-500 mb-3"></div>
-    <p class="text-sm font-roboto text-gray-500 mb-8">Hover over each card to see the transformation.</p>
+<h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-2">The Peel Action — Before &amp; After Setting</h3>
+<div class="h-1 w-[6%] bg-orange-500 mb-2"></div>
+<p class="text-sm font-roboto text-gray-500 mb-8">Tap or hover each card to see the transformation.</p>
 
-    <style>
-      .flip-card { background: transparent; perspective: 1000px; }
-      .flip-card-inner { position: relative; width: 100%; height: 220px; transition: transform 0.7s cubic-bezier(.4,2,.6,1); transform-style: preserve-3d; }
-      .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
-      .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; }
-      .flip-card-back { transform: rotateY(180deg); }
-    </style>
+<style>
+  .flip-card {
+    background: transparent;
+    perspective: 1000px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    transition: transform 0.55s ease;
+    transform-style: preserve-3d;
+  }
+  /* Desktop hover */
+  @media (hover: hover) {
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+  /* Mobile tap — JS adds .flipped class */
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    box-sizing: border-box;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  /* Tap hint pulse on mobile */
+  @media (hover: none) {
+    .flip-card-front::after {
+      content: 'Tap to flip';
+      position: absolute;
+      bottom: 12px;
+      font-size: 0.65rem;
+      font-family: 'Roboto', sans-serif;
+      color: #9ca3af;
+      letter-spacing: 0.05em;
+    }
+  }
+</style>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-      <!-- Card 1 -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front border border-gray-200" style="background-color: #f8fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-            <div class="text-4xl mb-4">🔩</div>
-            <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-2 text-center">Before Setting</h4>
-            <p class="text-xs font-roboto text-gray-500 text-center">The blind end has four pre-scored slits running along its length — invisible from outside but ready to split on pull.</p>
-            <p class="text-xs font-roboto text-gray-400 mt-4 text-center italic">Hover to see after →</p>
-          </div>
-          <div class="flip-card-back" style="background-color: #00396F;">
-            <div class="text-4xl mb-4">🌸</div>
-            <h4 class="text-sm font-semibold font-outfit text-white mb-2 text-center">After Setting</h4>
-            <p class="text-xs font-roboto text-white text-center opacity-90">Four petals fold outward into a wide flower head — bearing against the full blind face, spreading load evenly and preventing pull-through.</p>
-          </div>
-        </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+
+  <!-- Card 1 -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front border border-gray-200" style="background-color: #f8fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <div class="text-4xl mb-4">🔩</div>
+        <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-2 text-center">Before Setting</h4>
+        <p class="text-xs font-roboto text-gray-500 text-center">The blind end has four pre-scored slits running along its length — invisible from outside but ready to split on pull.</p>
+        <p class="text-xs font-roboto text-gray-400 mt-4 text-center italic hidden md:block">Hover to see after →</p>
       </div>
-      <!-- Card 2 -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front border border-gray-200" style="background-color: #f8fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-            <div class="text-4xl mb-4">📐</div>
-            <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-2 text-center">Standard Rivet Dome</h4>
-            <p class="text-xs font-roboto text-gray-500 text-center">A standard dome head has a bearing area roughly equal to the rivet body diameter — fine for metal, but too small for soft panels.</p>
-            <p class="text-xs font-roboto text-gray-400 mt-4 text-center italic">Hover to compare →</p>
-          </div>
-          <div class="flip-card-back" style="background-color: #f97316;">
-            <div class="text-4xl mb-4">🌼</div>
-            <h4 class="text-sm font-semibold font-outfit text-white mb-2 text-center">Peel Rivet Petal Head</h4>
-            <p class="text-xs font-roboto text-white text-center opacity-90">The four-petal head covers 3–4× the bearing area of a standard dome — distributing clamping force wide and deep into soft substrates.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front border border-gray-200" style="background-color: #f8fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-            <div class="text-4xl mb-4">🏗️</div>
-            <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-2 text-center">Why It Matters</h4>
-            <p class="text-xs font-roboto text-gray-500 text-center">Plasterboard, PVC window frames and furniture panels crack or allow pull-through under concentrated point loads.</p>
-            <p class="text-xs font-roboto text-gray-400 mt-4 text-center italic">Hover for the solution →</p>
-          </div>
-          <div class="flip-card-back" style="background-color: #00396F;">
-            <div class="text-4xl mb-4">✅</div>
-            <h4 class="text-sm font-semibold font-outfit text-white mb-2 text-center">The Peel Rivet Solution</h4>
-            <p class="text-xs font-roboto text-white text-center opacity-90">The wide petal head distributes that same force over a broad area — eliminating cracking and pull-through on every soft or brittle material it touches.</p>
-          </div>
-        </div>
+      <div class="flip-card-back" style="background-color: #00396F;">
+        <div class="text-4xl mb-4">🌸</div>
+        <h4 class="text-sm font-semibold font-outfit text-white mb-2 text-center">After Setting</h4>
+        <p class="text-xs font-roboto text-white text-center opacity-90">Four petals fold outward into a wide flower head — bearing against the full blind face, spreading load evenly and preventing pull-through.</p>
       </div>
     </div>
+  </div>
 
+  <!-- Card 2 -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front border border-gray-200" style="background-color: #f8fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <div class="text-4xl mb-4">📐</div>
+        <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-2 text-center">Standard Rivet Dome</h4>
+        <p class="text-xs font-roboto text-gray-500 text-center">A standard dome head has a bearing area roughly equal to the rivet body diameter — fine for metal, but too small for soft panels.</p>
+        <p class="text-xs font-roboto text-gray-400 mt-4 text-center italic hidden md:block">Hover to compare →</p>
+      </div>
+      <div class="flip-card-back" style="background-color: #f97316;">
+        <div class="text-4xl mb-4">🌼</div>
+        <h4 class="text-sm font-semibold font-outfit text-white mb-2 text-center">Peel Rivet Petal Head</h4>
+        <p class="text-xs font-roboto text-white text-center opacity-90">The four-petal head covers 3–4× the bearing area of a standard dome — distributing clamping force wide and deep into soft substrates.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front border border-gray-200" style="background-color: #f8fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <div class="text-4xl mb-4">🏗️</div>
+        <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-2 text-center">Why It Matters</h4>
+        <p class="text-xs font-roboto text-gray-500 text-center">Plasterboard, PVC window frames and furniture panels crack or allow pull-through under concentrated point loads.</p>
+        <p class="text-xs font-roboto text-gray-400 mt-4 text-center italic hidden md:block">Hover for the solution →</p>
+      </div>
+      <div class="flip-card-back" style="background-color: #00396F;">
+        <div class="text-4xl mb-4">✅</div>
+        <h4 class="text-sm font-semibold font-outfit text-white mb-2 text-center">The Peel Rivet Solution</h4>
+        <p class="text-xs font-roboto text-white text-center opacity-90">The wide petal head distributes that same force over a broad area — eliminating cracking and pull-through on every soft or brittle material it touches.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+    
     <!-- Where to use — application tiles -->
-    <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-4">Where Is the Peel Blind Rivet Used?</h3>
+    <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-2 mt-20">Where Is the Peel Blind Rivet Used?</h3>
     <div class="h-1 w-[6%] bg-orange-500 mb-8"></div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
       <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 text-center" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
@@ -492,24 +544,31 @@
     </div>
 
     <!-- Peel vs Bulb Tite comparison -->
-    <h3 class="text-xl font-semibold font-outfit text-[#00396F] mt-20">Peel Rivet vs Bulb Tite — Which to Choose?</h3>
-    <div class="h-1 w-[6%] bg-orange-500 mb-8"></div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
-      <div class="bg-gray-50 rounded-xl p-7 border border-gray-200" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        <div class="h-1 w-10 rounded mb-5" style="background-color: #00396F;"></div>
-        <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Peel Blind Rivet</h3>
-        <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">Steel &amp; Aluminium &nbsp;·&nbsp; 4 Petals</p>
-        <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">Available in both steel and aluminium — giving you a higher-strength steel option for applications where the substrate is soft but structural load is present. The four-petal head provides an extremely wide bearing surface and the longer length options (up to 40 mm) make it the only choice when stack thickness is very high.</p>
-        <p class="text-sm font-roboto font-semibold text-[#00396F]">Choose when: High stack thickness &middot; Steel body needed &middot; Plastic window frames &middot; Long grip required</p>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-7 border border-gray-200" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        <div class="h-1 w-10 rounded mb-5 bg-orange-500"></div>
-        <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Bulb Tite Rivet</h3>
-        <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">Aluminium Only &nbsp;·&nbsp; 3 Legs</p>
-        <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">Aluminium only, with three spreading legs that form a compact bulb. Better suited for lightweight composites, insulation and foam boards where the rivet body itself must be soft to avoid damaging the substrate. Grip range maxes at 12 mm — suited for thinner stacks.</p>
-        <p class="text-sm font-roboto font-semibold text-[#00396F]">Choose when: Thin insulation panels &middot; Aluminium frames &middot; Lightweight composites &middot; Foam boards</p>
-      </div>
+<h3 class="text-xl font-semibold font-outfit text-[#00396F] mt-20">Peel Rivet vs Bulb Tite — Which to Choose?</h3>
+<div class="h-1 w-[6%] bg-orange-500 mb-8"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+
+  <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-full rounded-t-xl" style="background-color: #00396F;"></div>
+    <div class="p-8">
+      <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Peel Blind Rivet</h3>
+      <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">Steel &amp; Aluminium &nbsp;·&nbsp; 4 Petals</p>
+      <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">Available in both steel and aluminium — giving you a higher-strength steel option for applications where the substrate is soft but structural load is present. The four-petal head provides an extremely wide bearing surface and the longer length options (up to 40 mm) make it the only choice when stack thickness is very high.</p>
+      <p class="text-sm font-roboto font-semibold text-[#00396F]">Choose when: High stack thickness &middot; Steel body needed &middot; Plastic window frames &middot; Long grip required</p>
     </div>
+  </div>
+
+  <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-full rounded-t-xl bg-orange-500"></div>
+    <div class="p-8">
+      <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Bulb Tite Rivet</h3>
+      <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">Aluminium Only &nbsp;·&nbsp; 3 Legs</p>
+      <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">Aluminium only, with three spreading legs that form a compact bulb. Better suited for lightweight composites, insulation and foam boards where the rivet body itself must be soft to avoid damaging the substrate. Grip range maxes at 12 mm — suited for thinner stacks.</p>
+      <p class="text-sm font-roboto font-semibold text-[#00396F]">Choose when: Thin insulation panels &middot; Aluminium frames &middot; Lightweight composites &middot; Foam boards</p>
+    </div>
+  </div>
+
+</div>
 
     <!-- Quick spec cards -->
     <h3 class="text-xl font-semibold font-outfit text-[#00396F] mt-20">Quick Specifications</h3>
@@ -535,13 +594,13 @@
 
     <!-- Installation callout -->
     <div class="rounded-xl p-6 mb-14 border-l-4" style="background-color: #eff6ff; border-left-color: #00396F;">
-      <h4 class="text-sm font-semibold font-outfit text-[#00396F] mt-20">Installation Notes</h4>
+      <h4 class="text-sm font-semibold font-outfit text-[#00396F] mb-3">Installation Notes</h4>
       <ul class="text-sm font-roboto text-gray-700 space-y-2">
-        <li class="flex items-start gap-2"><span class="mt-1 text-[#00396F]">▸</span> Use the exact hole size specified — 3.3–3.4 mm for the 3.2 mm rivet, 4.2 mm for the 4.0 mm, and 5.0 mm for the 4.8 mm. The petals need clearance to fold outward.</li>
-        <li class="flex items-start gap-2"><span class="mt-1 text-[#00396F]">▸</span> A standard hand or pneumatic rivet gun works — no special tooling is required for peel rivets.</li>
-        <li class="flex items-start gap-2"><span class="mt-1 text-[#00396F]">▸</span> For plasterboard, always ensure your stack thickness falls within the rivet's grip range — an overlong rivet will not peel correctly and the petals may fold unevenly.</li>
-        <li class="flex items-start gap-2"><span class="mt-1 text-[#00396F]">▸</span> For plastic window frames and uPVC panels, choose the aluminium body to avoid galvanic corrosion and surface staining around the rivet hole.</li>
-        <li class="flex items-start gap-2"><span class="mt-1 text-[#00396F]">▸</span> The 4.8 mm peel rivet in steel is suitable for moderate structural load-bearing applications on soft substrates — not just decorative assembly.</li>
+        <li class="flex items-start gap-2"><span class="text-[#00396F] shrink-0" style="line-height: 1.5rem;">▸</span> Use the exact hole size specified — 3.3–3.4 mm for the 3.2 mm rivet, 4.2 mm for the 4.0 mm, and 5.0 mm for the 4.8 mm. The petals need clearance to fold outward.</li>
+        <li class="flex items-start gap-2"><span class="text-[#00396F] shrink-0" style="line-height: 1.5rem;">▸</span> A standard hand or pneumatic rivet gun works — no special tooling is required for peel rivets.</li>
+        <li class="flex items-start gap-2"><span class="text-[#00396F] shrink-0" style="line-height: 1.5rem;">▸</span> For plasterboard, always ensure your stack thickness falls within the rivet's grip range — an overlong rivet will not peel correctly and the petals may fold unevenly.</li>
+        <li class="flex items-start gap-2"><span class="text-[#00396F] shrink-0" style="line-height: 1.5rem;">▸</span> For plastic window frames and uPVC panels, choose the aluminium body to avoid galvanic corrosion and surface staining around the rivet hole.</li>
+        <li class="flex items-start gap-2"><span class="text-[#00396F] shrink-0" style="line-height: 1.5rem;">▸</span> The 4.8 mm peel rivet in steel is suitable for moderate structural load-bearing applications on soft substrates — not just decorative assembly.</li>
       </ul>
     </div>
 
