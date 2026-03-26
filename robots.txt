@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /src/
+Disallow: /navbar.html
+Disallow: /footer.html
 
 Sitemap: https://exceltrading.in/sitemap.xml
