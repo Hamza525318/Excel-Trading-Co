@@ -230,7 +230,7 @@
   <div class="container mx-auto">
     <h2 class="text-2xl font-semibold font-outfit mb-1 mt-20 text-[#00396F]">Two Processes — Which Do You Need?</h2>
     <div class="h-1 w-[6%] bg-orange-500 mb-4"></div>
-    <p class="text-sm font-roboto text-gray-500 mb-4">Click your base metal thickness to see the recommended process.</p>
+    <p class="text-base font-roboto text-gray-500 mb-4">Click your base metal thickness to see the recommended process.</p>
 
     <!-- Interactive thickness selector -->
     <div class="bg-white rounded-xl border border-gray-200 p-6 md:p-8 mb-14" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
@@ -292,23 +292,30 @@
       showProcess('thin');
     </script>
 
-    <!-- 2 material cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14 mt-20">
-      <div class="bg-white rounded-xl p-7 border border-gray-200 overflow-hidden" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        <div class="h-1 w-10 rounded mb-5" style="background-color: #00396F;"></div>
-        <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Copper Coated Mild Steel</h3>
-        <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">CD Process · ISO 13918 · Standard Grade</p>
-        <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">Low carbon steel (equivalent to AISI 1006–1020) with standard copper plating. The copper coating improves chuck-to-stud conductivity for reliable arc initiation and provides corrosion protection during storage. Conical tip weld base ensures precise arc placement every time. Available M3 to M16 in standard and custom lengths.</p>
-        <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Automotive body panels · Electronics sheet metal · Switchboard fabrication · General construction</p>
-      </div>
-      <div class="bg-white rounded-xl p-7 border border-gray-200 overflow-hidden" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        <div class="h-1 w-10 rounded mb-5 bg-orange-500"></div>
-        <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Stainless Steel</h3>
-        <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">AISI 304 Standard · 316 on Request · Passivated</p>
-        <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">300-series austenitic stainless steel, passivated finish. No copper coating — stainless is self-passivating and does not require it. Fully corrosion resistant in outdoor, coastal, food processing and pharmaceutical environments. Compatible with both CD and short cycle processes. Supplied annealed where required for optimum weldability.</p>
-        <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Food processing equipment · Outdoor enclosures · Marine fabrication · Pharmaceutical panels</p>
-      </div>
+<!-- 2 material cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14 mt-20">
+
+  <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-full rounded-t-xl" style="background-color: #00396F;"></div>
+    <div class="p-8">
+      <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Copper Coated Mild Steel</h3>
+      <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">CD Process · ISO 13918 · Standard Grade</p>
+      <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">Low carbon steel (equivalent to AISI 1006–1020) with standard copper plating. The copper coating improves chuck-to-stud conductivity for reliable arc initiation and provides corrosion protection during storage. Conical tip weld base ensures precise arc placement every time. Available M3 to M16 in standard and custom lengths.</p>
+      <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Automotive body panels · Electronics sheet metal · Switchboard fabrication · General construction</p>
     </div>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" style="box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div class="h-1 w-full rounded-t-xl bg-orange-500"></div>
+    <div class="p-8">
+      <h3 class="text-base font-semibold font-outfit text-[#00396F] mb-1">Stainless Steel</h3>
+      <p class="text-xs font-roboto text-gray-400 mb-5 uppercase tracking-wider">AISI 304 Standard · 316 on Request · Passivated</p>
+      <p class="text-sm font-roboto text-gray-700 leading-relaxed mb-4">300-series austenitic stainless steel, passivated finish. No copper coating — stainless is self-passivating and does not require it. Fully corrosion resistant in outdoor, coastal, food processing and pharmaceutical environments. Compatible with both CD and short cycle processes. Supplied annealed where required for optimum weldability.</p>
+      <p class="text-sm font-roboto font-semibold text-[#00396F]">Best for: Food processing equipment · Outdoor enclosures · Marine fabrication · Pharmaceutical panels</p>
+    </div>
+  </div>
+
+</div>
 
     <!-- Applications tiles -->
     <h3 class="text-xl font-semibold font-outfit text-[#00396F] mb-1 mt-20">Where Are Weld Studs Used?</h3>
