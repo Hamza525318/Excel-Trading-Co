@@ -151,83 +151,90 @@
 </section>
 
 <section class="py-16 bg-primary-gray-100 px-6 md:px-16">
-  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-start gap-10">
 
-    <!-- Left: Spec Card -->
+    <!-- Left: Spec Card + Button -->
     <div class="w-full md:w-1/2 wow animate__animated animate__fadeInLeft">
       <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" style="box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 25px rgba(0,0,0,0.08);">
-        <div class="h-1 w-full rounded-t-xl" style="background-color: #00396F;"></div>
-        <div class="p-8">
-          <h2 class="text-2xl md:text-3xl font-bold font-outfit text-[#00396F] mb-6">Weld Stud — Specifications</h2>
-          <div class="space-y-0">
+        <div class="h-1 w-full" style="background-color: #00396F;"></div>
+        <div class="p-6 md:p-8">
+          <h2 class="text-xl md:text-2xl font-bold font-outfit text-[#00396F] mb-6">Weld Stud — Specifications</h2>
 
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Standard</span>
-              <span class="text-sm font-roboto font-medium text-gray-800">ISO 13918</span>
+          <!-- 2-column spec grid -->
+          <div class="grid grid-cols-2 gap-x-6 gap-y-0">
+
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Standard</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">ISO 13918</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Process</span>
-              <span class="text-sm font-roboto font-medium text-gray-800">CD &amp; Drawn Arc</span>
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Process</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">CD &amp; Drawn Arc</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Thread Sizes</span>
-              <span class="text-sm font-roboto font-medium text-gray-800">M3 to M16</span>
+
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Thread Sizes</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">M3 to M16</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Materials</span>
-              <span class="text-sm font-roboto font-medium text-gray-800 text-right">Copper Coated MS · Stainless Steel</span>
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Weld Base</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">Flanged / Non-Flanged</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Weld Base</span>
-              <span class="text-sm font-roboto font-medium text-gray-800">Flanged / Non-Flanged</span>
+
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Head Shape</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">Conical (CD)<br>Flux ball (Arc)</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Head Shape</span>
-              <span class="text-sm font-roboto font-medium text-gray-800 text-right">Conical tip (CD) · Flux ball (Arc)</span>
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Finish — MS</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">Copper Plated</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Finish — MS</span>
-              <span class="text-sm font-roboto font-medium text-gray-800">Copper Plated</span>
+
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Finish — SS</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">Passivated</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Finish — SS</span>
-              <span class="text-sm font-roboto font-medium text-gray-800">Passivated</span>
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">SS Grade</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">304 / 302<br>316 on request</p>
             </div>
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">SS Grade</span>
-              <span class="text-sm font-roboto font-medium text-gray-800 text-right">AISI 304 / 302 / 316 on request</span>
+
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Materials</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">MS · Stainless</p>
             </div>
-            <div class="flex items-center justify-between py-3">
-              <span class="text-sm font-semibold font-poppins text-gray-500 uppercase tracking-wider">Usage</span>
-              <span class="text-sm font-roboto font-medium text-gray-800 text-right">Automotive · Construction · Electronics</span>
+            <div class="py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold font-poppins text-gray-400 uppercase tracking-wider mb-1">Usage</p>
+              <p class="text-sm font-roboto font-medium text-gray-800">Auto · Construction<br>Electronics</p>
             </div>
 
           </div>
         </div>
       </div>
 
-            <!-- Enquire Now Button -->
-            <div class="w-full flex justify-center md:justify-start">
-               <a href='/contact-us'><button class="mt-4 bg-orange-500 text-white py-2 px-12 rounded-full font-roboto text-base hover:bg-orange-600 transition duration-300 ease-in-out mx-auto md:mx-0 md:text-left">
-                Enquire Now
-              </button></a>
-            </div>
-          </div>
+      <div class="mt-5 flex justify-center md:justify-start">
+        <a href="/contact-us">
+          <button class="bg-orange-500 text-white py-2 px-12 rounded-full font-roboto text-base hover:bg-orange-600 transition duration-300 ease-in-out">
+            Enquire Now
+          </button>
+        </a>
+      </div>
+    </div>
 
-    <!-- Right: Product Image Card — add your image src below -->
+    <!-- Right: Product Image Card -->
     <div class="w-full md:w-1/2 wow animate__animated animate__fadeInRight" data-wow-delay="0.15s">
       <div class="bg-white rounded-xl border border-gray-200 overflow-hidden mx-auto max-w-xs" style="box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 25px rgba(0,0,0,0.08);">
         <div class="h-1 w-full bg-orange-500"></div>
-        <div class="p-8 flex flex-col items-center">
+        <div class="p-6 md:p-8 flex flex-col items-center">
           <img
             src="../../../assets/single-products/weld-stud/weld-stud.png"
             alt="Weld Stud CD Drawn Arc ISO 13918"
-            class="w-full h-[220px] object-contain mb-6"
+            class="w-full h-[200px] object-contain mb-6"
             style="transition: transform 0.4s ease;"
             onmouseover="this.style.transform='scale(1.06)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-          <h3 class="text-base font-outfit font-semibold text-[#00396F] mb-4">Available In</h3>
+          <h3 class="text-base font-outfit font-semibold text-[#00396F] mb-4 self-start">Available In</h3>
           <div class="grid grid-cols-2 gap-4 w-full">
             <div class="rounded-xl border border-gray-200 overflow-hidden flex flex-col" style="box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
               <div class="h-1 w-full" style="background-color: #00396F;"></div>
@@ -238,7 +245,7 @@
                   </div>
                   <span class="text-xs font-semibold font-outfit text-[#00396F] leading-tight">Mild Steel<br>Copper Plated</span>
                 </div>
-                <p class="text-xs font-roboto text-gray-500 leading-relaxed">Standard grade. Best for <strong class="text-gray-700">automotive, electronics and general fabrication</strong>.</p>
+                <p class="text-xs font-roboto text-gray-500 leading-relaxed">For <strong class="text-gray-700">automotive, electronics and general fabrication</strong>.</p>
               </div>
             </div>
             <div class="rounded-xl border border-gray-200 overflow-hidden flex flex-col" style="box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
@@ -250,7 +257,7 @@
                   </div>
                   <span class="text-xs font-semibold font-outfit text-[#00396F] leading-tight">Stainless<br>304 / 316</span>
                 </div>
-                <p class="text-xs font-roboto text-gray-500 leading-relaxed">Corrosion resistant. Best for <strong class="text-gray-700">outdoor, marine and food processing</strong>.</p>
+                <p class="text-xs font-roboto text-gray-500 leading-relaxed">For <strong class="text-gray-700">outdoor, marine and food processing</strong>.</p>
               </div>
             </div>
           </div>
