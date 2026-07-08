@@ -311,6 +311,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://exceltrading.in/locations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/locations/chennai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/locations/coimbatore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/locations/hyderabad</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/locations/kochi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/locations/vijayawada</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://exceltrading.in/blog/Lithium-battery-cell-holders</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

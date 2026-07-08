@@ -4,6 +4,7 @@ module.exports = {
     "./*.html",
     "./categories/**/*.html",
     "./single-products/**/*.html",
+    "./locations/**/*.html",
     "./blog/**/*.html",
     "./navbar.html",
     "./footer.html",
