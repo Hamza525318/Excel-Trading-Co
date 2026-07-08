@@ -16,12 +16,47 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/categories/rivet-nuts</loc>
+    <loc>https://exceltrading.in/blogs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/anchors</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/blind-rivets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/clinchfasteners</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/furniture-fasteners</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/nuts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/rivet-nuts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/riveters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/screws</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -36,27 +71,92 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/categories/anchors</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://exceltrading.in/categories/riveters</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://exceltrading.in/categories/furniture-fasteners</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://exceltrading.in/single-products/rivet-nut/round-body</loc>
+    <loc>https://exceltrading.in/single-products/anchors/dropin-anchor</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/rivet-nut/half-hexagon-body</loc>
+    <loc>https://exceltrading.in/single-products/anchors/metal-frame-anchor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/anchors/nylon-frame-fixing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/anchors/shield-anchor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/anchors/wall-plug</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/anchors/wedge-anchor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/clinching-fasteners/clinch-nut</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/clinching-fasteners/clinch-stud</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/clinching-fasteners/self-clinching-standoff</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/colour-head-rivets/colour-head-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/drywall-chipboard/drywall-chipboard-screws</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/furniture-fasteners/barrel-nut</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/furniture-fasteners/d-nut</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/furniture-fasteners/jcbc-bolt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/furniture-fasteners/t-nut</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/nord-lock/nord-lock</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/nuts/insert-press-nut</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/power-tools/power-tools</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -66,12 +166,137 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/clinching-fasteners/clinching-fastener</loc>
+    <loc>https://exceltrading.in/single-products/rivet-nut/half-hexagon-body</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/bits-socket/bits-socket</loc>
+    <loc>https://exceltrading.in/single-products/rivet-nut/round-body</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/riveters/hand-nut-riveter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/riveters/hand-riveters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/riveters/pneumatic-riveters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/anlock-in-bolt-blind-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/anlock-out-bolt-blind-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/bulb-tite-blind-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/high-strength-blind-rivet-hk-lok</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/multi-grip-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/open-end-blind-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/peel-blind-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/sealed-blind-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivets/structural-blind-tite-rivet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/screws/hex-flange-bolt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-drilling-screws/CSK-Head-Self-Drilling-Screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-drilling-screws/Truss-Head-Self-Drilling-Screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-drilling-screws/cement-sheet-fixing-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-drilling-screws/hex-head-self-drilling-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-drilling-screws/non-corrosive-ruspert</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-drilling-screws/pan-head-self-drilling-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-tapping-screws/confirmat-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-tapping-screws/counter-sunk-head-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-tapping-screws/hex-head-din-751-wood-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-tapping-screws/hex-head-tapping-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-tapping-screws/pan-head-self-tapping-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/self-tapping-screws/truss-head-tapping-screw</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -81,13 +306,18 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/capacitor/capacitor-discharge</loc>
+    <loc>https://exceltrading.in/single-products/weld-studs/weld-stud</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/drywall-chipboard/drywall-chipboard-screws</loc>
+    <loc>https://exceltrading.in/blog/Lithium-battery-cell-holders</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/blog/ev-fasteners-india</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
