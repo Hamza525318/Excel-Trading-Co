@@ -1,6 +1,9 @@
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
 }
 .bg-blur {
     backdrop-filter: blur(20px);
