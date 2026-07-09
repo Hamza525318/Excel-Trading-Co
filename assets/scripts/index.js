@@ -52,6 +52,10 @@ menuBtn.addEventListener('click', addSidebar);
 var searchScript = document.createElement('script');
 searchScript.src = '/assets/scripts/search.js';
 document.body.appendChild(searchScript);
+
+var scrollHintScript = document.createElement('script');
+scrollHintScript.src = '/assets/scripts/scroll-hint.js';
+document.body.appendChild(scrollHintScript);
   
 function toggleDropdown() {
   var dropdown = document.getElementById('dropdownMenu');
