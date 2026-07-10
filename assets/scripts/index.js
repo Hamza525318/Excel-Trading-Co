@@ -56,6 +56,10 @@ document.body.appendChild(searchScript);
 var scrollHintScript = document.createElement('script');
 scrollHintScript.src = '/assets/scripts/scroll-hint.js';
 document.body.appendChild(scrollHintScript);
+
+var gaEventsScript = document.createElement('script');
+gaEventsScript.src = '/assets/scripts/ga-events.js';
+document.body.appendChild(gaEventsScript);
   
 function toggleDropdown() {
   var dropdown = document.getElementById('dropdownMenu');
