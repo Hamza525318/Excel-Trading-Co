@@ -86,21 +86,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/anchors/metal-frame-anchor</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://exceltrading.in/single-products/anchors/nylon-frame-fixing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://exceltrading.in/single-products/anchors/shield-anchor</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://exceltrading.in/single-products/anchors/wall-plug</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -281,17 +266,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://exceltrading.in/single-products/self-tapping-screws/confirmat-screw</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://exceltrading.in/single-products/self-tapping-screws/counter-sunk-head-screw</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://exceltrading.in/single-products/self-tapping-screws/hex-head-din-751-wood-screw</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
