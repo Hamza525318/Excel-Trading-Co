@@ -241,6 +241,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://exceltrading.in/single-products/screws/hex-phillips-sems-screw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/CSK-Head-Self-Drilling-Screw</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

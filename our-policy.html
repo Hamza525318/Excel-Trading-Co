@@ -6,10 +6,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
     gtag('js', new Date());
 
     gtag('config', 'G-HWPMF6NJ2J');
   </script>
+  <script defer src="/assets/scripts/view-transitions.js"></script>
+  <script defer src="/assets/scripts/cookie-consent.js"></script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,6 +99,14 @@
               "@type": "Answer",
               "text": "Yes. Contact details submitted through our enquiry form or by phone/email are used only to respond to your enquiry and process your order. We do not sell or share your information with third parties for marketing purposes."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this website use cookies, and can I opt out?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — we use Google Analytics cookies to understand site usage, and nothing else (no advertising or remarketing cookies). On your first visit, a banner lets you Accept or Reject analytics cookies. Choosing Reject means no analytics cookies are set and your visit is not tracked. Your choice is remembered on your device, and you can change it later by clearing your browser's site data for exceltrading.in."
+            }
           }
         ]
       }
@@ -142,6 +158,12 @@
     <h2 class="text-xl md:text-2xl font-outfit font-bold mb-2 text-[#00396F]">Privacy Policy</h2>
     <div class="h-1 w-16 bg-orange-500 mb-4"></div>
     <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-8">Contact details submitted through our enquiry form, by phone, or by email are used only to respond to your enquiry and process your order. We do not sell or share your information with third parties for marketing purposes. For any privacy-related queries, contact us at <a href="mailto:info@exceltrading.in" class="text-[#00396F] underline">info@exceltrading.in</a>.</p>
+
+    <h2 id="cookie-policy" class="text-xl md:text-2xl font-outfit font-bold mb-2 text-[#00396F]">Cookie Policy</h2>
+    <div class="h-1 w-16 bg-orange-500 mb-4"></div>
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">This website uses Google Analytics (GA4) to understand how visitors use our site — which pages are viewed, how visitors found us, and which enquiries lead to contact — so we can improve the site and serve customers better. This is the only cookie-based tracking used on exceltrading.in; we do not use advertising or remarketing cookies.</p>
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">When you first visit, a banner asks you to <strong>Accept</strong> or <strong>Reject</strong> analytics cookies. If you choose Reject, no analytics cookies are set and your visit is not tracked. If you choose Accept, Google Analytics cookies are set to help us understand site usage. Your choice is remembered on this device so you are not asked again, and you can change your mind at any time by clearing your browser's site data for exceltrading.in.</p>
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-8">For questions about our cookie usage, contact us at <a href="mailto:info@exceltrading.in" class="text-[#00396F] underline">info@exceltrading.in</a>.</p>
   </div>
 </section>
 

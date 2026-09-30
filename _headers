@@ -1,0 +1,10 @@
+# Disable back-forward cache (bfcache) restoration for category and product pages,
+# so the browser's native Back button does a real navigation instead of an instant
+# cache restore — which is required for the View Transitions page animation to fire
+# (Chrome skips view transitions on bfcache restores by spec). Scoped to just these
+# two page types so the rest of the site keeps normal bfcache instant-back behavior.
+/categories/*
+  Cache-Control: no-store
+
+/single-products/*
+  Cache-Control: no-store
