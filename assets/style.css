@@ -6,20 +6,6 @@ html {
     overflow-x: hidden;
 }
 
-/* ── Page transitions (native View Transitions API — progressive enhancement, no-op in unsupported browsers) ── */
-@view-transition {
-  navigation: auto;
-}
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-}
-/* Shared-element morph: product thumbnail on a category card growing into the hero image on its product page. Name is assigned dynamically per-product by assets/scripts/view-transitions.js */
-::view-transition-group(*) {
-  animation-duration: 0.6s;
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-}
 .bg-blur {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -266,5 +252,78 @@ html {
 @media (max-width: 768px){
   .contact-card{
     width: 100%;
+  }
+}
+
+/* ── Mobile: scrollable spec tables (behaviour in assets/scripts/table-scroll.js) ── */
+.table-scroll-wrap {
+  overflow-x: auto;
+}
+.table-swipe-hint {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .table-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-scroll th,
+  .table-scroll td {
+    padding: 0.625rem 0.75rem !important;
+  }
+  /* Tables carry an inline overflow:hidden for rounded corners, which would trap the sticky column; the wrapper clips instead */
+  .table-sticky-col {
+    overflow: visible !important;
+  }
+  .table-sticky-col th:first-child,
+  .table-sticky-col td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    box-shadow: 3px 0 5px -2px rgba(0, 0, 0, 0.18);
+  }
+  .table-swipe-hint {
+    display: block;
+    text-align: right;
+    font-family: Roboto, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #c2410c;
+    margin-bottom: 0.4rem;
+    transition: opacity 0.3s ease;
+  }
+  .table-swipe-hint.is-used {
+    opacity: 0;
+  }
+
+  /* Product page CTA pair (wrapper added by assets/scripts/quote.js): two equal one-line buttons */
+  .product-cta-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .product-cta-row > a {
+    flex: 1 1 0;
+    display: flex;
+    min-width: 0;
+  }
+  .product-cta-row button {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 48px;
+    margin: 0;
+    padding: 0.625rem 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+/* Quote modal: 16px fields on phones so iOS Safari does not zoom the page on focus */
+@media (max-width: 767px) {
+  #quote-modal input,
+  #quote-modal select,
+  #quote-modal textarea {
+    font-size: 16px;
   }
 }

@@ -177,6 +177,8 @@
   .blog-fcta-wa span { display: none; }
   .blog-fcta-close { top: 50%; right: .2rem; transform: translateY(-50%); }
   body.blog-fcta-open .fixed.bottom-4.right-2 { display: none; }
+  /* Sit above the sitewide mobile action bar (navbar.html) */
+  .blog-fcta { bottom: calc(3.5rem + env(safe-area-inset-bottom) + .5rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -37,8 +37,8 @@
     bar.id = 'cookie-consent-bar';
     bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:9999;background-color:#00396F;box-shadow:0 -4px 12px rgba(0,0,0,0.15);';
     bar.innerHTML =
-      '<div class="container mx-auto px-6 md:px-16 py-4 flex flex-col md:flex-row items-center justify-between gap-4">' +
-        '<p class="text-white text-sm font-roboto leading-relaxed max-w-2xl">' +
+      '<div class="container mx-auto px-4 md:px-16 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">' +
+        '<p class="text-white text-xs md:text-sm font-roboto leading-relaxed max-w-2xl text-center md:text-left">' +
           'We use cookies to understand site traffic and improve your experience. ' +
           '<a href="/our-policy#cookie-policy" class="underline hover:text-orange-300">Learn more</a>.' +
         '</p>' +
