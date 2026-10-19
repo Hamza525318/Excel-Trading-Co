@@ -78,39 +78,30 @@
     var q = (hashParams.get('q') || searchParams.get('q') || '').trim();
     var summary = document.getElementById('search-results-summary');
     var list = document.getElementById('search-results-list');
+    list.innerHTML = '';
+    document.title = q ? 'Search: ' + q + ' | Excel Trading Corporation' : 'Search Results | Excel Trading Corporation';
+    var box = document.getElementById('site-search-input'); if (box && q) box.value = q;
 
     if (!q) {
-      summary.textContent = 'Type a keyword, product name, or DIN/ISO standard into the search box above.';
+      summary.textContent = 'Type a product, size or DIN/ISO standard into the search box above.';
       return;
     }
-
-    fetch('/assets/scripts/search-index.json')
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        var results = window.ExcelSearch ? window.ExcelSearch.search(data, q, 30) : [];
-        summary.textContent = results.length
-          ? results.length + ' result(s) for "' + q + '"'
-          : 'No results for "' + q + '". Try a different keyword, or browse our product categories below.';
-
-        results.forEach(function (r) {
-          var a = document.createElement('a');
-          a.href = r.url;
-          a.className = 'block bg-white rounded-lg shadow-md p-5 hover:shadow-xl transition duration-300';
-          var h3 = document.createElement('h3');
-          h3.className = 'text-base md:text-lg font-semibold font-outfit text-[#00396F] mb-1';
-          h3.textContent = r.title;
-          a.appendChild(h3);
-          list.appendChild(a);
-        });
-
-        if (!results.length) {
-          var browse = document.createElement('a');
-          browse.href = '/#products-range-section';
-          browse.className = 'block bg-white rounded-lg shadow-md p-5 hover:shadow-xl transition duration-300 sm:col-span-2 lg:col-span-3 text-center text-[#00396F] font-semibold';
-          browse.textContent = 'Browse All Products';
-          list.appendChild(browse);
-        }
+    window.ExcelSearch.search(q, 30).then(function (res) {
+      if (res.results.length) {
+        summary.textContent = res.results.length + (res.results.length === 1 ? ' result for "' : ' results for "') + q + '"';
+        list.innerHTML = res.results.map(function (r) { return window.ExcelSearch.cardHtml(r, res.tokens); }).join('');
+        return;
+      }
+      summary.textContent = '';
+      list.innerHTML = '<div class="bg-white rounded-lg shadow-md sm:col-span-2 lg:col-span-3">' + window.ExcelSearch.noResultsHtml(q, res.suggestion) + '</div>';
+      window.ExcelSearch.categories().then(function (cats) {
+        list.innerHTML += cats.map(function (c) {
+          return '<a href="' + window.ExcelSearch.esc(c.u) + '" class="block bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition duration-300 text-[#00396F] font-semibold font-outfit">' + window.ExcelSearch.esc(c.t) + '</a>';
+        }).join('');
       });
+    }).catch(function () {
+      summary.textContent = 'Search is unavailable right now. Please browse our product categories or call +91 7204435253.';
+    });
   }
 
   window.addEventListener('load', function () {

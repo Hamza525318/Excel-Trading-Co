@@ -1,0 +1,5 @@
+# Rebuilds the site search index from the live pages on every deploy,
+# so new or edited pages are searchable automatically.
+[build]
+  command = "node scripts/build-search-index.js"
+  publish = "."
