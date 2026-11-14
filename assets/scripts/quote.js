@@ -12,11 +12,32 @@
     ['Other metals', ['Brass', 'Aluminium', 'Titanium Grade 2', 'Titanium Grade 5']],
     ['Plastic', ['Nylon 6/6']]
   ];
-  var STANDARDS = ['DIN', 'ISO', 'ASME', 'ASTM', 'BSF', 'BSW', 'IS', 'Other / Not sure'];
+  var STANDARDS = ['DIN', 'ISO', 'NF', 'ASME', 'ASTM', 'BSF', 'BSW', 'IS', 'Other / Not sure'];
+  // AFNOR washers (NF E 25-511 contact, 25-513 / 25-514 flat): sized by inner Ø, outer Ø and thickness; the series follows from those
+  var NFE_RE = /nf\s*e?\s*25[\s.-]?5(11|13|14)|contact\s*(lock\s*)?washer|afnor\s*(flat\s*)?washer/i;
+  var NFE_MATERIALS = ['SS 304 (A2)', 'SS 316 (A4)', 'Other'];
+  var NFE_SERIES_NAMES = { Z: 'narrow', N: 'narrow', M: 'medium', L: 'large', LL: 'extra large' };
+  // 25-513 and 25-514 share nominal sizes but cover different ranges (25-513 to M52, 25-514 from M1.6 to M36)
+  function nfeKind(name) { return /25[\s.-]?511|contact/i.test(name) ? 'contact' : /25[\s.-]?514/.test(name) ? 'flat514' : 'flat513'; }
+  var nfeData = null;
+  function loadNfe() {
+    if (nfeData) return Promise.resolve(nfeData);
+    return fetch('/assets/data/nfe-washers.json').then(function (r) { return r.json(); }).then(function (d) { nfeData = d; return d; })
+      .catch(function () { nfeData = { flat: {}, contact: {} }; return nfeData; });
+  }
+  // All rows of one kind as {t, d1, d2, s, series}, in thread order
+  function nfeRows(kind) {
+    var out = [], tab = (nfeData && nfeData[kind]) || {};
+    Object.keys(tab).forEach(function (series) { tab[series].forEach(function (r) { out.push({ t: r[0], d1: r[1], d2: r[2], s: r[3], series: series }); }); });
+    return out.sort(function (a, b) { return parseFloat(a.t.slice(1)) - parseFloat(b.t.slice(1)) || a.d2 - b.d2; });
+  }
   var DIAS = ['M2', 'M2.5', 'M3', 'M4', 'M5', 'M6', 'M8', 'M10', 'M12', 'M14', 'M16', 'M18', 'M20', 'M22', 'M24', 'M27', 'M30', 'M36'];
+  var SPLIT_RE = /split\s*(blind\s*)?rivet\s*nut|four[\s-]*(prong|leg)(ged|ed)?\s*rivet\s*nut/i;
+  var SPLIT_DIAS = ['M6', 'M8'];
+  var SPLIT_MATERIALS = ['Mild Steel', 'Other'];
 
   // Wire threaded inserts get their own type, material, thread and length fields
-  var WTI_RE = /wire\s*thread(ed)?\s*insert|helical\s*(thread\s*)?insert|screw\s*thread\s*insert|heli-?\s?coil|thread\s*coil|\bSTI\b/i;
+  var WTI_RE = /wire\s*thread(ed)?\s*insert|helical\s*(thread\s*)?insert|screw\s*thread\s*insert|heli-?\s?coil|thread\s*coil|tang-?\s?(less|free)\s*(thread\s*|helical\s*)?insert|\bSTI\b/i;
   var WTI_TYPES = ['Tanged', 'Tangless'];
   var WTI_MATERIALS = ['SS 304', 'Nitronic 60', 'Other'];
   var WTI_LENS = ['1D', '1.5D', '2D', '2.5D', '3D'];
@@ -56,6 +77,7 @@
   function saveBuyer() { try { sessionStorage.setItem(BUYER_KEY, JSON.stringify(buyer)); } catch (e) {} }
 
   function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch (e) {} updateBadge(); }
+  var lastRef = '';
   function track(name, params) { if (typeof gtag === 'function') gtag('event', name, params || {}); }
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
   function $(id) { return document.getElementById(id); }
@@ -495,7 +517,7 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
   }
 
   function enhanceForm() {
-    ['q-standard', 'q-wti-type', 'q-material', 'q-wti-thread', 'q-wti-len'].forEach(function (id) { var s = $(id); if (s) enhanceSelect(s); });
+    ['q-standard', 'q-wti-type', 'q-material', 'q-wti-thread', 'q-wti-len', 'q-nfe-id', 'q-nfe-od'].forEach(function (id) { var s = $(id); if (s) enhanceSelect(s); });
     ['q-name', 'q-standard-no', 'q-dia', 'q-wti-size'].forEach(function (id) { var i = $(id); if (i) enhanceCombo(i); });
   }
 
@@ -596,11 +618,12 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
         '<h3 class="qf-section">' + (editing === null ? 'Add an item' : 'Edit item') + '</h3>' +
         (editing === null ? '' : '<div class="qf-editing"><span>Editing item ' + (editing + 1) + '</span><button type="button" id="q-cancel-edit" class="qf-link">Cancel</button></div>') +
         '<div class="qf-grid">' +
-          field('q-standard', 'Standard', '<div class="qf-row"><select id="q-standard" class="qf-input" style="max-width:11rem"><option value="">Select</option>' + options(STANDARDS) + '</select>' +
-            '<div class="qf-grow"><input id="q-standard-no" list="q-standard-list" class="qf-input" placeholder="Number, e.g. 931" maxlength="30" autocomplete="off"><datalist id="q-standard-list"></datalist></div></div>',
-            { cls: 'qf-span2', optional: true, help: 'Choose a DIN or ISO number and we fill in the item name for you.' }) +
+          // Name first: many items have no DIN/ISO number. Buyers who only know the number use the standard field below instead.
           field('q-name', 'Item name', '<input id="q-name" aria-required="true" list="q-name-list" class="qf-input" placeholder="e.g. Hex Flange Bolt" maxlength="100" autocomplete="off"><datalist id="q-name-list"></datalist>',
-            { cls: 'qf-span2', req: true }) +
+            { cls: 'qf-span2', req: true, help: 'Only know the DIN or ISO number? Leave this blank and choose it below.' }) +
+          field('q-standard', 'DIN / ISO standard', '<div class="qf-row"><select id="q-standard" class="qf-input" style="max-width:11rem"><option value="">Select</option>' + options(STANDARDS) + '</select>' +
+            '<div class="qf-grow"><input id="q-standard-no" list="q-standard-list" class="qf-input" placeholder="Number, e.g. 931" maxlength="30" autocomplete="off"><datalist id="q-standard-list"></datalist></div></div>',
+            { cls: 'qf-span2', optional: true, help: 'Pick a DIN or ISO number and we fill in the item name for you.' }) +
           field('q-wti-type', 'Insert type', '<select id="q-wti-type" class="qf-input"><option value="">Select type</option>' + options(WTI_TYPES) + '</select>', { id: 'q-wti-type-wrap', hidden: true, req: true }) +
           field('q-material', 'Material', '<select id="q-material" class="qf-input"><option value="">Select material</option>' + materialOptions(MATERIALS) + '</select>' +
             '<input id="q-material-other" class="qf-input qf-mt" style="display:none" placeholder="Specify material" maxlength="60">', { optional: true }) +
@@ -610,7 +633,12 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
             '<div id="q-size-wti" class="qf-row" style="display:none">' +
               '<select id="q-wti-thread" aria-label="Thread" class="qf-input" style="max-width:7.5rem">' + options(Object.keys(WTI_SIZES)) + '</select>' +
               '<input id="q-wti-size" aria-label="Thread size" list="q-wti-size-list" class="qf-input" maxlength="20" autocomplete="off"><datalist id="q-wti-size-list"></datalist>' +
-              '<select id="q-wti-len" aria-label="Insert length" class="qf-input" style="max-width:7rem"></select></div>',
+              '<select id="q-wti-len" aria-label="Insert length" class="qf-input" style="max-width:7rem"></select></div>' +
+            '<div id="q-size-nfe" style="display:none"><div class="qf-row">' +
+              '<div class="qf-grow"><select id="q-nfe-id" aria-label="Inner diameter" class="qf-input"></select></div>' +
+              '<div class="qf-grow"><select id="q-nfe-od" aria-label="Outer diameter" class="qf-input"></select></div>' +
+              '<div class="qf-grow"><input id="q-nfe-t" aria-label="Thickness" class="qf-input" placeholder="Thickness" readonly tabindex="-1"></div></div>' +
+              '<p id="q-nfe-series" class="qf-help" aria-live="polite">Choose the inner and outer diameter. The thickness and series are filled in for you.</p></div>',
             { id: 'q-size-wrap', labelId: 'q-size-label', optional: true }) +
           field('q-qty', 'Quantity', '<div class="qf-suffix-wrap"><input id="q-qty" aria-required="true" type="number" min="1" step="1" inputmode="numeric" class="qf-input" placeholder="e.g. 5000"><span class="qf-suffix">pcs</span></div>', { req: true }) +
           '<div class="qf-actions"><button type="submit" id="q-add" class="qf-btn qf-btn-navy">' + (editing === null ? 'Add item' : 'Save changes') + '</button></div>' +
@@ -679,6 +707,7 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       '<div class="qf-done"><div class="qf-done-badge"><svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>' +
       '<h3>We have received your request</h3>' +
       '<p>Thank you. Our team will reply by email or phone within one business day (Mon-Sat, 10 AM to 6 PM).</p>' +
+      (lastRef ? '<p>Your reference number is <strong style="color:var(--navy)">' + esc(lastRef) + '</strong>. A confirmation has been emailed to you.</p>' : '') +
       '<ol class="qf-next"><li><span class="dot">1</span><span>We check your items and sizes.</span></li><li><span class="dot">2</span><span>We send you a quote, usually within one business day.</span></li><li><span class="dot">3</span><span>Need it sooner? Call <a href="tel:+917204435253" style="color:var(--navy);font-weight:600">+91 7204435253</a>.</span></li></ol></div>' +
       '<div class="qf-foot" style="justify-content:center"><button type="button" id="quote-close-done" class="qf-btn qf-btn-navy">Close</button></div>';
   }
@@ -738,6 +767,88 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       var diaOnly = en ? !!en[1] : (/\b(nut|washer|circlip)s?\b/i.test(n) && !/\b(bolt|screw|stud|rod)s?\b/i.test(n));
       $('q-len').parentNode.style.display = diaOnly ? 'none' : '';
       syncWti();
+      syncSplit(n);
+      syncNfe(n);
+    }
+    // AFNOR washers: three columns (inner Ø, outer Ø, thickness) taken from the standard tables; the series is worked out from the pick
+    var nfeOn = null, nfeKindNow = null;
+    function syncNfe(n) {
+      var en = stdEntry();
+      var on = NFE_RE.test(n) || !!(en && NFE_RE.test(en[0]));
+      var kind = on ? nfeKind(NFE_RE.test(n) ? n : en[0]) : null;
+      if (on) {
+        $('q-size-std').style.display = 'none';
+        $('q-size-wti').style.display = 'none';
+        $('q-size-nfe').style.display = '';
+        $('q-size-wrap').className = 'qf-field qf-span2';
+        $('q-size-label').firstChild.textContent = 'Inner Ø, outer Ø & thickness (mm)';
+        $('q-size-label').setAttribute('for', 'q-nfe-id-btn');
+      }
+      if (on === nfeOn && kind === nfeKindNow) return;
+      var turnedOn = on && !nfeOn;
+      nfeOn = on; nfeKindNow = kind;
+      var mat = $('q-material'), cur = mat.value;
+      if (on) {
+        if (turnedOn) {
+          mat.innerHTML = '<option value="">Select material</option>' + options(NFE_MATERIALS);
+          mat.value = NFE_MATERIALS.indexOf(cur) >= 0 ? cur : '';
+          $('q-material-other').style.display = mat.value === 'Other' ? 'block' : 'none';
+        }
+        loadNfe().then(function () { if (nfeOn) fillNfeIds(); });
+        return;
+      }
+      $('q-size-nfe').style.display = 'none';
+      if (wtiOn || splitOn) return;   // another product mode owns the size and material fields
+      $('q-size-std').style.display = '';
+      $('q-size-wrap').className = 'qf-field';
+      $('q-size-label').firstChild.textContent = 'Size';
+      $('q-size-label').setAttribute('for', 'q-dia');
+      mat.innerHTML = '<option value="">Select material</option>' + materialOptions(MATERIALS);
+      mat.value = MATERIALS.indexOf(cur) >= 0 ? cur : '';
+      $('q-material-other').style.display = mat.value === 'Other' ? 'block' : 'none';
+    }
+    function fillNfeIds() {
+      var sel = $('q-nfe-id'), cur = sel.value, seen = {}, opts = [];
+      nfeRows(nfeKindNow).forEach(function (r) { if (!seen[r.t]) { seen[r.t] = 1; opts.push('<option value="' + r.t + '">' + r.d1 + ' mm (' + r.t + ')</option>'); } });
+      sel.innerHTML = '<option value="">Inner Ø</option>' + opts.join('');
+      sel.value = seen[cur] ? cur : '';
+      fillNfeOds();
+    }
+    function fillNfeOds() {
+      var t = $('q-nfe-id').value, sel = $('q-nfe-od'), cur = sel.value;
+      var rows = nfeRows(nfeKindNow).filter(function (r) { return r.t === t; });
+      sel.innerHTML = '<option value="">Outer Ø</option>' + rows.map(function (r) { return '<option value="' + r.series + '">' + r.d2 + ' mm</option>'; }).join('');
+      sel.value = rows.some(function (r) { return r.series === cur; }) ? cur : '';
+      syncNfeT();
+    }
+    function nfePick() {
+      var t = $('q-nfe-id').value, series = $('q-nfe-od').value;
+      return nfeRows(nfeKindNow).filter(function (r) { return r.t === t && r.series === series; })[0] || null;
+    }
+    function syncNfeT() {
+      var r = nfePick(), help = $('q-nfe-series');
+      $('q-nfe-t').value = r ? r.s + ' mm' : '';
+      help.innerHTML = r ? 'Series <b>' + r.series + '</b> (' + NFE_SERIES_NAMES[r.series] + ') added automatically: ' + r.t + ', ' + r.d1 + ' × ' + r.d2 + ' × ' + r.s + ' mm.'
+        : 'Choose the inner and outer diameter. The thickness and series are filled in for you.';
+    }
+    $('q-nfe-id').addEventListener('change', fillNfeOds);
+    $('q-nfe-od').addEventListener('change', syncNfeT);
+    // Split rivet nuts are stocked in M6 and M8 only, so the size list shrinks to those two
+    var splitOn = null;
+    function syncSplit(n) {
+      var on = SPLIT_RE.test(n);
+      if (on === splitOn) return;
+      splitOn = on;
+      var dia = $('q-dia');
+      $('q-dia-list').innerHTML = options(on ? SPLIT_DIAS : DIAS);
+      dia.placeholder = on ? 'M6 or M8' : 'Dia, e.g. M8';
+      if (on && dia.value && SPLIT_DIAS.indexOf(dia.value.trim().toUpperCase()) < 0) dia.value = '';
+      // ...and they only come in mild steel, so that is filled in for the buyer
+      if (!on && wtiOn) return;   // the insert material list is already in place
+      var mat = $('q-material'), cur = mat.value, list = on ? SPLIT_MATERIALS : MATERIALS;
+      mat.innerHTML = '<option value="">Select material</option>' + (on ? options(list) : materialOptions(list));
+      mat.value = list.indexOf(cur) >= 0 ? cur : (on ? 'Mild Steel' : '');
+      $('q-material-other').style.display = mat.value === 'Other' ? 'block' : 'none';
     }
     // Swaps in the insert type, insert materials and thread / length fields when the item is a wire threaded insert
     var wtiOn = null;
@@ -815,6 +926,23 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       syncWtiLens();
       $('q-wti-len').value = w.wtiLen || '';
     }
+    if (editing !== null && items[editing] && items[editing].nfe) {
+      var nf = items[editing];
+      $('q-material').value = nf.materialSel || '';
+      $('q-material-other').style.display = nf.materialSel === 'Other' ? 'block' : 'none';
+      loadNfe().then(function () {
+        if (!nfeOn) return;
+        fillNfeIds();
+        $('q-nfe-id').value = nf.nfeT || ''; fillNfeOds();
+        $('q-nfe-od').value = nf.nfeSeries || ''; syncNfeT();
+      });
+    }
+    if (editing !== null && items[editing] && SPLIT_RE.test(items[editing].name)) {
+      var sp = items[editing];
+      $('q-material').value = sp.materialSel || 'Mild Steel';
+      $('q-material-other').style.display = sp.materialSel === 'Other' ? 'block' : 'none';
+      if (sp.materialSel === 'Other') $('q-material-other').value = sp.materialOther || '';
+    }
 
     function itemError(id, msg) { setFieldError(id, msg); focusField(id); return false; }
     // Adds (or saves) the item in the form; returns false and shows why if it is incomplete
@@ -824,8 +952,14 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       var qty = Number($('q-qty').value);
       var wti = $('q-size-wti').style.display !== 'none';
       var wtiType = wti ? $('q-wti-type').value : '';
-      if (!name) return itemError('q-name', 'Enter the item name, for example Hex Flange Bolt.');
+      // A buyer who only knows the DIN/ISO number can leave the name blank: the number becomes the item name
+      if (!name) {
+        var sSel = $('q-standard').value, sNo = $('q-standard-no').value.trim();
+        if (sNo) { name = (sSel && sSel.indexOf('Other') !== 0 ? sSel + ' ' : '') + sNo; $('q-name').value = name; }
+        else return itemError('q-name', 'Enter the item name, or choose its DIN or ISO number below.');
+      }
       if (wti && !wtiType) return itemError('q-wti-type', 'Choose tanged or tangless.');
+      if (SPLIT_RE.test(name) && $('q-dia').value.trim() && SPLIT_DIAS.indexOf($('q-dia').value.trim().toUpperCase()) < 0) return itemError('q-dia', 'Split rivet nuts are available in M6 and M8.');
       if (!(qty > 0) || Math.floor(qty) !== qty) return itemError('q-qty', 'Enter the quantity as a whole number of pieces.');
       if (editing === null && items.length >= MAX_ITEMS) { showAlert('q-item-error', 'You can add up to ' + MAX_ITEMS + ' items per request.'); return false; }
       var matSel = $('q-material').value, matOther = $('q-material-other').value.trim();
@@ -840,6 +974,13 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       if (wti) size = [tSize ? (tSys === 'Metric' ? '' : tSys + ' ') + tSize : (tLen ? tSys : ''), tLen].filter(Boolean).join(' - ');
       var item = { name: name, size: size, dia: wti ? '' : dia, len: wti ? '' : len, material: material, standard: standard, qty: qty + ' pcs', qtyNum: qty, materialSel: matSel, materialOther: matOther, standardSel: stdSel, standardNo: stdNo };
       if (wti) { item.wti = true; item.wtiType = wtiType; item.wtiThread = tSys; item.wtiSize = tSize; item.wtiLen = tLen; }
+      if ($('q-size-nfe').style.display !== 'none') {
+        // e.g. "M8 - 8.4 x 22 x 1.5 mm - Series L"
+        var nr = nfePick();
+        item.size = nr ? nr.t + ' - ' + nr.d1 + ' x ' + nr.d2 + ' x ' + nr.s + ' mm - Series ' + nr.series : ($('q-nfe-id').value || '');
+        item.dia = ''; item.len = '';
+        item.nfe = true; item.nfeT = $('q-nfe-id').value; item.nfeSeries = $('q-nfe-od').value;
+      }
       if (editing !== null) { items[editing] = item; lastAdded = editing; editing = null; } else { items.push(item); lastAdded = items.length - 1; track('quote_item_add', { item_name: name, page_path: location.pathname }); }
       prefill = '';
       save();
@@ -849,7 +990,7 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       e.preventDefault();
       if (!commitItem()) return;
       render();
-      var n = $('q-standard-btn'); if (n) n.focus();
+      var n = $('q-name'); if (n) n.focus();
     });
     document.querySelectorAll('[data-remove]').forEach(function (b) { b.addEventListener('click', function () { items.splice(parseInt(b.getAttribute('data-remove'), 10), 1); editing = null; save(); render(); }); });
     document.querySelectorAll('[data-edit]').forEach(function (b) { b.addEventListener('click', function () { editing = parseInt(b.getAttribute('data-edit'), 10); render(); modal.scrollTop = 0; }); });
@@ -950,6 +1091,7 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
       }).then(function (r) {
         if (r.body && r.body.ok) {
           track('quote_submit', { items_count: items.length, page_path: location.pathname });
+          lastRef = r.body.ref || '';
           items = []; editing = null; save(); buyer = {}; savedFiles = []; saveBuyer(); step = 'done'; render(); modal.scrollTop = 0;
         } else {
           reset();
@@ -982,7 +1124,7 @@ textarea.qf-input{height:auto;min-height:96px;padding:12px 14px;line-height:1.5;
     modal.scrollTop = 0;
     document.body.style.overflow = 'hidden';
     track('quote_open', { page_path: location.pathname });
-    var n = $(prefill ? 'q-material-btn' : 'q-standard-btn'); if (n) n.focus({ preventScroll: true });
+    var n = $(prefill ? 'q-material-btn' : 'q-name'); if (n) n.focus({ preventScroll: true });
   }
   function close() {
     if (!modal) return;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://exceltrading.in</loc>
     <changefreq>monthly</changefreq>
@@ -32,288 +32,573 @@
   </url>
   <url>
     <loc>https://exceltrading.in/categories/anchors</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/blind-rivets</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/open-end-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/clinchfasteners</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/furniture-fasteners</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/nuts</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/nuts/insert-press-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/rivet-nuts</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/rivet-nut/split-rivet-nut.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/wire-threaded-inserts</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/wire-threaded-inserts/tanged-free-running-wire-threaded-insert.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/categories/washers</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/washers/nfe-25511-contact-lock-washer.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/washers/nfe-25511-contact-lock-washer</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/washers/nfe-25511-contact-lock-washer.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/washers/nfe-25513-flat-washer</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/washers/nfe-25513-flat-washer.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/washers/nfe-25514-flat-washer</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/washers/nfe-25514-flat-washer.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/wire-threaded-inserts/tanged-free-running-wire-threaded-insert</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/wire-threaded-inserts/tanged-free-running-wire-threaded-insert.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/wire-threaded-inserts/tangless-free-running-wire-threaded-insert</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/wire-threaded-inserts/tangless-free-running-wire-threaded-insert.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/riveters</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/screws</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/self-drilling-screws</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/categories/self-tapping-screws</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/company/EXCEL-LOGO.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/anchors/dropin-anchor</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/anchors/dropin-anchor.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/anchors/wall-plug</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/anchors/wall-plug.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/anchors/wedge-anchor</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/anchors/anchor.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/clinching-fasteners/clinch-nut</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/products/clinch-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/clinching-fasteners/clinch-stud</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/products/clinch-stud.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/clinching-fasteners/self-clinching-standoff</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/products/self-Clinching-standoff.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/colour-head-rivets/colour-head-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/color-head-rivets/color-head-rivet.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/drywall-chipboard/drywall-chipboard-screws</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/drywall-chipboard/chipboard-screw.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/furniture-fasteners/barrel-nut</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/furniture-fasteners/barrel-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/furniture-fasteners/d-nut</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/furniture-fasteners/d-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/furniture-fasteners/jcbc-bolt</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/furniture-fasteners/screw-bolts.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/furniture-fasteners/t-nut</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/furniture-fasteners/t-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/nord-lock/nord-lock</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/nord-lock/nord-lock.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/nuts/insert-press-nut</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/nuts/insert-press-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/nuts/hex-flange-nut-serration</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/nuts/flange-nut-with-serration.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/power-tools/power-tools</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/bolt-nut/power-tools.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivet-nut/full-hexagon-body</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/rivet-nut/hexagon-f-body-rivet-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivet-nut/half-hexagon-body</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/rivet-nut/hexagon-body-rivet-nut.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivet-nut/round-body</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/rivet-nut/round-body-rivet-nut.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://exceltrading.in/single-products/rivet-nut/split-rivet-nut</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/rivet-nut/split-rivet-nut.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/rivet-nut/split-rivet-nut-installed.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/riveters/hand-nut-riveter</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/riveters/hand-nut-riveter.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/riveters/hand-riveters</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/riveters/hand-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/riveters/pneumatic-riveters</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/riveters/pneumatic-riveter-600.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/anlock-in-bolt-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/anlock-in-bolt-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/anlock-out-bolt-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/anlock-out-bolt-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/bulb-tite-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/bulb-tite-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/u-bolt-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/u-bolt-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/multi-grip-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/multi-grip-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/open-end-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/open-end-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/peel-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/peel-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/sealed-blind-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/sealed-blind-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/rivets/structural-blind-tite-rivet</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/blind-rivets/structural-blind-tite-rivet.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/screws/hex-flange-bolt</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/screws/hex-flange-bolt.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/screws/hex-phillips-sems-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/screws/hex-phillips-sems-screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/CSK-Head-Self-Drilling-Screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-drilling-screws/CSK-Head-Self-Drilling-Screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/Truss-Head-Self-Drilling-Screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-drilling-screws/Truss-Head-Self-Drilling-Screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/cement-sheet-fixing-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-drilling-screws/cement-sheet-fixing.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/hex-head-self-drilling-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-drilling-screws/hex-head-self-drilling-screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/non-corrosive-ruspert</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-drilling-screws/non-corrosive-ruspert.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-drilling-screws/pan-head-self-drilling-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-drilling-screws/pan-head-self-drilling-screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-tapping-screws/counter-sunk-head-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-tapping-screws/counter-tapping.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-tapping-screws/hex-flange-self-tapping-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-tapping-screws/hex-flange-self-tapping-screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-tapping-screws/pan-head-self-tapping-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-tapping-screws/pan-head-self-tapping-screw.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/self-tapping-screws/truss-head-tapping-screw</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/self-tapping-screws/truss-tapping.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/shear-stud/shear-stud</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/shear-connector/shear-stud.jpeg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/single-products/weld-studs/weld-stud</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://exceltrading.in/assets/single-products/weld-stud/weld-stud.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://exceltrading.in/locations</loc>

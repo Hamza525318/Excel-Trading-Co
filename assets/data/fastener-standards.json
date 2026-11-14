@@ -215,5 +215,10 @@
     "15977": ["Open End Blind Rivet (Aluminium / Steel)", 0],
     "15979": ["Open End Blind Rivet (Steel / Steel)", 0],
     "15983": ["Open End Blind Rivet (Stainless A2 / A2)", 0]
+  },
+  "NF": {
+    "E 25-511": ["Contact Lock Washer NF E 25-511", 1],
+    "E 25-513": ["NF E 25-513 Washer", 1],
+    "E 25-514": ["NF E 25-514 Washer", 1]
   }
 }

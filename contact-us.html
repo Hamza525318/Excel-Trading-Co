@@ -73,7 +73,7 @@
             <h2 class="text-[#00396F] text-2xl font-bold font-outfit mb-2">Get in touch With Us</h2>
             <div class="h-1 w-16 bg-[#F9BD86] mb-4"></div>
             <p class="text-lg font-poppins mb-6">We Would Love To Hear From You</p>
-            <form
+            <form id="contact-form"
               action="https://formspree.io/f/xykrjjnj"
               method="POST">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 font-poppins">
@@ -128,5 +128,6 @@
         .then(html => document.getElementById('footer-placeholder').innerHTML = html);
     </script>
 
+    <script src="/assets/scripts/contact-form.js" defer></script>
 </body>
 </html>
